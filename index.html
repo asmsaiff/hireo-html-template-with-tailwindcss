@@ -13,13 +13,13 @@
     <!-- Header Section Start -->
     <div class="header-wrapper px-12 py-6 shadow-xl">
         <div class="flex justify-between">
-            <div class="brand">
+            <div class="flex flex-start space-x-6 divide-x">
+                <!-- Brand Logo -->
                 <h1 class="text-2xl">Mamurjor</h1>
-            </div>
 
-            <div class="navigation">
-                <nav>
-                    <ul class="flex space-x-4 text-gray-600">
+                <!-- Navigation -->
+                <nav class="self-center">
+                    <ul class="flex space-x-4 text-gray-600 ml-6">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Find Work</a></li>
                         <li><a href="#">For Employers</a></li>
@@ -30,13 +30,14 @@
                 </nav>
             </div>
 
-            <div class="right-side-header-widget flex space-x-6 flex-wrap content-center">
-                <div class="notif-msg flex space-x-4 flex-wrap content-center border-l pl-4">
+            <!-- Header Right Side Widgets -->
+            <div class="flex space-x-6 flex-wrap content-center">
+                <div class="flex space-x-4 flex-wrap content-center border-l pl-4">
                     <i class="far fa-bell"></i>
                     <i class="far fa-envelope"></i>
                 </div>
 
-                <div class="profile border-l pl-4">
+                <div class="border-l pl-4">
                     <img class="w-8 bg-gray-200 rounded-full" src="assets/images/profile.png" alt="">
                 </div>
             </div>
