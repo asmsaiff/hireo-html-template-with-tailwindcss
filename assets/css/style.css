@@ -4257,6 +4257,14 @@ video {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
+.bg-home-page-header {
+  background-image: url(/assets/images/home-background.jpg);
+}
+
+.bg-gradient-home-page-header {
+  background-image: linear-gradient(to right, #ffffff 40%, rgba(0, 0, 0, 0));
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -35538,6 +35546,14 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .sm\:bg-home-page-header {
+    background-image: url(/assets/images/home-background.jpg);
+  }
+
+  .sm\:bg-gradient-home-page-header {
+    background-image: linear-gradient(to right, #ffffff 40%, rgba(0, 0, 0, 0));
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -66647,6 +66663,14 @@ video {
 
   .md\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .md\:bg-home-page-header {
+    background-image: url(/assets/images/home-background.jpg);
+  }
+
+  .md\:bg-gradient-home-page-header {
+    background-image: linear-gradient(to right, #ffffff 40%, rgba(0, 0, 0, 0));
   }
 
   .md\:from-transparent {
@@ -97760,6 +97784,14 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-home-page-header {
+    background-image: url(/assets/images/home-background.jpg);
+  }
+
+  .lg\:bg-gradient-home-page-header {
+    background-image: linear-gradient(to right, #ffffff 40%, rgba(0, 0, 0, 0));
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -128871,6 +128903,14 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-home-page-header {
+    background-image: url(/assets/images/home-background.jpg);
+  }
+
+  .xl\:bg-gradient-home-page-header {
+    background-image: linear-gradient(to right, #ffffff 40%, rgba(0, 0, 0, 0));
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -159980,6 +160020,14 @@ video {
 
   .\32xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-home-page-header {
+    background-image: url(/assets/images/home-background.jpg);
+  }
+
+  .\32xl\:bg-gradient-home-page-header {
+    background-image: linear-gradient(to right, #ffffff 40%, rgba(0, 0, 0, 0));
   }
 
   .\32xl\:from-transparent {
