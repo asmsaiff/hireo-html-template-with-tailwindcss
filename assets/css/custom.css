@@ -1,3 +1,7 @@
+.home-page-header {
+    background-image: url("../images/home-background.jpg");
+}
+
 .fas.fa-angle-right.clr-gry.slick-arrow {
     position: absolute;
     top: 50%;
