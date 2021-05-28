@@ -4,7 +4,6 @@ module.exports = {
 	theme: {
 		extend: {
       backgroundImage: {
-        'home-page-header': "url(/assets/images/home-background.jpg)",
         'gradient-home-page-header': "linear-gradient(to right, #ffffff 40%, rgba(0, 0, 0, 0))",
       },
     },
