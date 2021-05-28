@@ -6,42 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mamurjor</title>
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <base href="index.html">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 
-    <!-- Slick Slider CDN -->
+    <!-- Slick Slider -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
 
-    <style>
-        .fas.fa-angle-right.clr-gry.slick-arrow {
-            position: absolute;
-            top: 50%;
-            right: -35px;
-            z-index: 9;
-            font-size: 35px;
-        }
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
-        .fas.fa-angle-left.clr-gry.slick-arrow {
-            position: absolute;
-            top: 50%;
-            left: -35px;
-            font-size: 35px;
-        }
-
-        .slick-list.draggable {
-            padding: 0 !important;
-        }
-    </style>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
     <!-- Header Section Start -->
-    <div class="header-wrapper px-12 py-6 shadow-sm filter drop-shadow-lg bg-white sticky top-0">
+    <div class="header-wrapper px-12 py-6 shadow-sm filter drop-shadow-lg bg-white sticky top-0 z-50">
         <div class="flex justify-between">
             <div class="flex flex-start space-x-6 divide-x">
                 <!-- Brand Logo -->
@@ -50,7 +33,7 @@
                 <!-- Navigation -->
                 <nav class="self-center">
                     <ul class="flex space-x-4 text-gray-600 ml-6">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="#">Find Work</a></li>
                         <li><a href="#">For Employers</a></li>
                         <li><a href="#">Training</a></li>
@@ -77,7 +60,7 @@
     <!-- Header Section End -->
 
     <!-- Homepage Header -->
-    <div class="bg-home-page-header bg-cover bg-no-repeat z-10">
+    <div class="bg-home-page-header bg-cover bg-no-repeat">
         <div class="bg-gradient-home-page-header bg-blend-overlay py-32">
             <div class="container mx-auto">
                 <h1 class="text-3xl text-gray-800">
@@ -154,7 +137,6 @@
                 </div>
                 <div class="group flex flex-col hover:bg-blue-700 hover:text-gray-100 transition py-8 px-4 rounded cursor-pointer hover:shadow-2xl">
                     <i class="fas fa-pencil-ruler text-3xl"></i>
-                    <i class="far fa-file-code"></i>
                     <span class="bg-gray-200 group-hover:bg-blue-900 transition self-center w-max rounded px-2 mt-4">612</span>
                     <h3 class="text-lg font-semibold mt-3">Graphic Design</h3>
                     <p class="">Software Engineer, Web / Mobile Developer & More</p>
@@ -289,7 +271,6 @@
 
                     <button href="#" class="align-middle group-hover:bg-blue-700 rounded my-10 px-4 text-gray-700 bg-gray-300 group-hover:text-gray-100">Apply Now</button>
                 </div>
-                
             </div>
         </div>
     </div>
@@ -619,10 +600,182 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
+
+    <!-- Membership Package Section -->
+    <div class="bg-gray-100 py-16">
+        <div class="container mx-auto">
+            <h1 class="text-center text-2xl mb-6">Membership Plans</h1>
+
+            <div class="flex justify-center">
+                <div class="flex space-x-4">
+                    <label>
+                        <input type="radio" name="package" class="checked:bg-blue-700 checked:border-transparent">
+                        <span>Billed Monthly</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="package">
+                        <span>Billed Yearly</span>
+                        <span class="bg-green-200 text-green-600 px-2 py-1 rounded">save 10%</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 mt-6">
+                <div class="p-8 shadow-2xl bg-white">
+                    <h1 class="text-xl mb-2">Basic Plan</h1>
+                    <p class="text-gray-700">One time fee for one listing or task <br>highlighted in search results.</p>
+
+                    <div class="space-x-1 bg-gray-100 p-4 my-6 text-center">
+                            <span class="text-3xl font-bold">$19</span>
+                            <sub class="text-lg text-gray-600">/ monthly</sub>
+                        </span>
+                    </div>
+
+                    <h5 class="text-gray-800">Features of Basic Plan</h5>
+
+                    <ul class="mt-3 space-y-1 text-gray-600">
+                        <li>1 Listing</li>
+                        <li>30 Days Visibility</li>
+                        <li>Highlighted in Search Results</li>
+                    </ul>
+
+                    <a href="#" class="block bg-transparent border border-blue-700 text-blue-700 hover:bg-blue-700 rounded text-center py-2 mt-6 hover:text-white transition">Buy Now</a>
+                </div>
+
+                <div class="p-8 shadow-2xl bg-white z-30">
+                    <h1 class="text-xl mb-2">Standard Plan</h1>
+                    <p class="text-gray-700">One time fee for one listing or task <br>highlighted in search results.</p>
+
+                    <div class="space-x-1 bg-gray-100 p-4 my-6 text-center">
+                            <span class="text-3xl font-bold">$529</span>
+                            <sub class="text-lg text-gray-600">/ monthly</sub>
+                        </span>
+                    </div>
+
+                    <h5 class="text-gray-800">Features of Standard Plan</h5>
+
+                    <ul class="mt-3 space-y-1 text-gray-600">
+                        <li>5 Listing</li>
+                        <li>60 Days Visibility</li>
+                        <li>Highlighted in Search Results</li>
+                    </ul>
+
+                    <a href="#" class="block bg-transparent border border-blue-700 text-blue-700 hover:bg-blue-700 rounded text-center py-2 mt-6 hover:text-white transition">Buy Now</a>
+                </div>
+
+                <div class="p-8 shadow-2xl bg-white">
+                    <h1 class="text-xl mb-2">Extended Plan</h1>
+                    <p class="text-gray-700">One time fee for one listing or task <br>highlighted in search results.</p>
+
+                    <div class="space-x-1 bg-gray-100 p-4 my-6 text-center">
+                            <span class="text-3xl font-bold">$1069</span>
+                            <sub class="text-lg text-gray-600">/ monthly</sub>
+                        </span>
+                    </div>
+
+                    <h5 class="text-gray-800">Features of Extended Plan</h5>
+
+                    <ul class="mt-3 space-y-1 text-gray-600">
+                        <li>Unlimited Listing</li>
+                        <li>90 Days Visibility</li>
+                        <li>Highlighted in Search Results</li>
+                    </ul>
+
+                    <a href="#" class="block bg-transparent border border-blue-700 text-blue-700 hover:bg-blue-700 rounded text-center py-2 mt-6 hover:text-white transition">Buy Now</a>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="px-12 py-6 shadow-sm filter drop-shadow-lg sticky top-0 z-50 border-b border-gray-700">
+            <div class="container mx-auto">
+                <div class="flex justify-between">
+                    <div class="flex flex-start space-x-6 divide-x ">
+                        <!-- Brand Logo -->
+                        <h1 class="text-2xl text-white">Mamurjor</h1>
+                    </div>
+        
+                    <!-- Header Right Side Widgets -->
+                    <div class="flex space-x-6 flex-wrap content-center">
+                        <div class="flex text-white space-x-4 flex-wrap content-center border-gray-600 border-l pl-4">
+                            <i class="far fa-bell"></i>
+                            <i class="far fa-envelope"></i>
+                        </div>
+        
+                        <div class="border-l border-gray-600 pl-4">
+                            <select name="" id="" class="bg-gray-700 rounded border-none px-4 py-2 text-white">
+                                <option>English</option>
+                                <option value="bengali">Bengali</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto">
+            <div class="py-12">
+                <div class="grid grid-cols-5 gap-6">
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">For Candidates</h5>
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="#">Add Resume</a></li>
+                            <li><a href="#">Job Alerts</a></li>
+                            <li><a href="#">My Bookmarks</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">For Employers</h5>
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Browse Candidates</a></li>
+                            <li><a href="#">Post a Job</a></li>
+                            <li><a href="#">Post a Task</a></li>
+                            <li><a href="#">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">Useful Links</h5>
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">My Account</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-span-2">
+                        <h5 class="text-gray-100 text-lg"><i class="far mr-2 fa-envelope"></i>Sign Up For a Newsletter</h5>
+                        <p class="py-3 text-gray-400">
+                            Weekly breaking news, analysis and cutting edge<br>advices on job searching.
+                        </p>
+
+                        <form action="">
+                            <div class="flex flex-row">
+                                <input class="w-full outline-none py-3 pl-3 rounded bg-gray-900 text-gray-100" type="email" placeholder="Enter your email address">
+                                <button class="bg-blue-700 hover:bg-white ml-1 rounded px-5 text-white hover:text-black transition" type="submit"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-12 py-6 shadow-sm filter drop-shadow-lg sticky top-0 z-50 border-t border-gray-700">
+            <div class="container mx-auto text-center text-gray-300">
+                <p>
+                    Copyright @ <a href="#" class="font-semibold text-gray-100 hover:underline">Mamurjor IT</a> | Designed & Developed by - Mamurjor Team
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Slick Slider JS Script -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
