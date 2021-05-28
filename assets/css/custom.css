@@ -1,0 +1,18 @@
+.fas.fa-angle-right.clr-gry.slick-arrow {
+    position: absolute;
+    top: 50%;
+    right: -35px;
+    z-index: 9;
+    font-size: 35px;
+}
+
+.fas.fa-angle-left.clr-gry.slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    font-size: 35px;
+}
+
+.slick-list.draggable {
+    padding: 0 !important;
+}
