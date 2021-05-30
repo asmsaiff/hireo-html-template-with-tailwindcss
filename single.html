@@ -63,8 +63,8 @@
     <div class="py-8 md:py-20 bg-gray-100">
         <div class="container mx-auto">
             <div class="md:pr-10 flex flex-wrap content-center justify-between flex-col md:flex-row pb-5 md:pb-0">
-                <div class="flex justify-start p-3 md:p-5">
-                    <img class="hidden md:block p-3 w-36 img-rounded" src="assets/images/company-logo-01.png" alt="">
+                <div class="flex justify-start p-3 md:pt-5 md:pb-5 md:pr-5">
+                    <img class="hidden md:block mt-3 mr-5 w-28 h-28 rounded" src="assets/images/company-logo-01.png" alt="">
 
                     <div class="px-0 md:px-3 flex flex-col">
                         <h2 class="text-3xl pt-1 pb-3 text-gray-700">Restaurant General Manager</h2>
@@ -112,7 +112,7 @@
     <div class="py-20">
         <div class="container mx-auto">
             <div class="grid grid-cols-4 grid-flow-col">
-                <div class="flex flex-col col-span-3 pr-6">
+                <div class="flex flex-col col-span-3 pr-12">
                     <h1 class="text-2xl text-gray-700 mb-4">Job Description</h1>
 
                     <p class="text-gray-500 text-justify mb-6 mt-2">
@@ -134,24 +134,91 @@
                 </div>
 
                 <div class="flex flex-col col-span-1">
-                    Lorem, ipsum dolor.
+                    <a href="#" class="group block bg-blue-700 rounded text-center py-3 mt-3 text-white transform hover:-translate-y-1 shadow-lg duration-300 transition">Apply Now &rarr;</a>
+
+                    <div class="mt-6">
+                        <div class="flex flex-col rounded">
+                            <h1 class="bg-gray-100 py-4 px-6 text-xl text-gray-700">Job Summary</h1>
+
+                            <div class="flex flex-col py-4 px-6 bg-gray-50 space-y-4">
+                                <div class="flex">
+                                    <span class="text-blue-600 text-lg mr-2">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                    <div class="flex flex-col -mt-1">
+                                        <h4 class="text-xl text-gray-800">Location</h4>
+                                        <h2 class="text-lg text-gray-700">London, United Kingdom</h2>
+                                    </div>
+                                </div>
+
+                                <div class="flex">
+                                    <span class="text-blue-600 text-lg mr-2">
+                                        <i class="fas fa-briefcase"></i>
+                                    </span>
+                                    <div class="flex flex-col -mt-1">
+                                        <h4 class="text-xl text-gray-800">Job Type</h4>
+                                        <h2 class="text-lg text-gray-700">Full Time</h2>
+                                    </div>
+                                </div>
+
+                                <div class="flex">
+                                    <span class="text-blue-600 text-lg mr-2">
+                                        <i class="fas fa-euro-sign"></i>
+                                    </span>
+                                    <div class="flex flex-col -mt-1">
+                                        <h4 class="text-xl text-gray-800">Salary</h4>
+                                        <h2 class="text-lg text-gray-700">$35k - $38k</h2>
+                                    </div>
+                                </div>
+
+                                <div class="flex">
+                                    <span class="text-blue-600 text-lg mr-2">
+                                        <i class="far fa-clock"></i>
+                                    </span>
+                                    <div class="flex flex-col -mt-1">
+                                        <h4 class="text-xl text-gray-800">Date Posted</h4>
+                                        <h2 class="text-lg text-gray-700">2 days ago</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="text-2xl text-gray-700 mb-4 mt-6">Bookmark or Share</h1>
+
+                    <button class="flex align-middle text-white text-lg">
+                        <i class="fas fa-star px-2 py-3 rounded-l bg-gray-600 self-center"></i>
+                        <span class="px-2 py-1 rounded-r bg-gray-700">Bookmark</span>
+                    </button>
+                    
+                    <form action="" class="mt-5">
+                        <div class="flex flex-row">
+                            <input class="w-full border outline-none py-3 px-3 rounded-l text-gray-700" type="email" value="http://127.0.0.1:5500/single.html" readonly>
+
+                            <button class="bg-blue-700 rounded-r px-5 text-white transition" type="copy"><i class="far fa-copy"></i></button>
+                        </div>
+                    </form>
+
+                    <div class="flex">
+                        
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container mx-auto">
             <div class="grid grid-cols-3 gap-8 m-2">
-                <div class="flex flex-col shadow-2xl p-4">
-                    <div class="flex py-4">
-                        <img class="w-20 mr-4 rounded-xl" src="assets/images/company-logo-01.png" alt="">
+                <div class="flex flex-col shadow-2xl rounded-xl transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+                    <div class="flex px-8 py-6">
+                        <img class="w-16 p-2 mr-4 rounded-xl" src="assets/images/company-logo-02.png" alt="">
 
                         <div class="w-max flex flex-col">
-                            <h5>Coffee</h5>
-                            <h4>Barishta & Cashier</h4>
+                            <h5 class="text-lg text-gray-600">Coffee</h5>
+                            <h4 class="text-xl text-gray-700">Barishta & Cashier</h4>
                         </div>
                     </div>
-                    <div class="py-4">
-                        <div class="grid grid-cols-2 text-gray-500">
+                    <div class="py-5 px-8 bg-gray-100">
+                        <div class="grid grid-cols-2 text-lg text-gray-500">
                             <a href="#"><i class="far mr-2 fa-building"></i>Hexagon</a>
                             <a href="#"><i class="fas mr-2 fa-map-marker-alt"></i>San Francisco</a>
                             <a href="#"><i class="fas mr-2 fa-briefcase"></i>Full Time</a>
@@ -160,17 +227,36 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col shadow-2xl">
-                    <div class="flex py-4">
-                        <img class="w-20 mr-4 rounded-xl" src="assets/images/company-logo-01.png" alt="">
+                <div class="flex flex-col shadow-2xl rounded-xl transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+                    <div class="flex px-8 py-6">
+                        <img class="w-16 p-2 mr-4 rounded-xl" src="assets/images/company-logo-02.png" alt="">
 
                         <div class="w-max flex flex-col">
-                            <h5>Coffee</h5>
-                            <h4>Barishta & Cashier</h4>
+                            <h5 class="text-lg text-gray-600">Coffee</h5>
+                            <h4 class="text-xl text-gray-700">Barishta & Cashier</h4>
                         </div>
                     </div>
-                    <div class="py-4">
-                        <div class="grid grid-cols-2 text-gray-500">
+                    <div class="py-5 px-8 bg-gray-100">
+                        <div class="grid grid-cols-2 text-lg text-gray-500">
+                            <a href="#"><i class="far mr-2 fa-building"></i>Hexagon</a>
+                            <a href="#"><i class="fas mr-2 fa-map-marker-alt"></i>San Francisco</a>
+                            <a href="#"><i class="fas mr-2 fa-briefcase"></i>Full Time</a>
+                            <a href="#"><i class="far mr-2 fa-clock"></i>Full Time</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col shadow-2xl rounded-xl transition duration-300 transform hover:-translate-y-1 cursor-pointer">
+                    <div class="flex px-8 py-6">
+                        <img class="w-16 p-2 mr-4 rounded-xl" src="assets/images/company-logo-02.png" alt="">
+
+                        <div class="w-max flex flex-col">
+                            <h5 class="text-lg text-gray-600">Coffee</h5>
+                            <h4 class="text-xl text-gray-700">Barishta & Cashier</h4>
+                        </div>
+                    </div>
+                    <div class="py-5 px-8 bg-gray-100">
+                        <div class="grid grid-cols-2 text-lg text-gray-500">
                             <a href="#"><i class="far mr-2 fa-building"></i>Hexagon</a>
                             <a href="#"><i class="fas mr-2 fa-map-marker-alt"></i>San Francisco</a>
                             <a href="#"><i class="fas mr-2 fa-briefcase"></i>Full Time</a>
