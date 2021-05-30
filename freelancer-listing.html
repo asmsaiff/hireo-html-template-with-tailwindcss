@@ -57,9 +57,9 @@
     <!-- Header Section End -->
 
     <!-- Main Content Area -->
-    <div class="grid grid-cols-1 md:grid-cols-4 md:grid-flow-col grid-flow-row">
+    <div class="flex justify-between">
         <!-- Left Sidebar - Filter Area -->
-        <div class="p-4 md:p-12 bg-gray-100">
+        <div class="w-3/12 p-4 md:p-12 bg-gray-100 overflow-scroll fixed max-h-screen top-12">
             <form action="">
                 <label for="" class="block text-xl text-gray-600">Location</label>
                 <div class="flex justify-between bg-white border rounded px-3 py-2 mt-2">
@@ -121,7 +121,7 @@
                     </button>
                 </div>
 
-                <button>Subm</button>
+                <button class="w-full block bg-blue-700 rounded text-center py-3 mt-3 text-white transform hover:-translate-y-1 shadow-lg duration-300 transition">Submit</button>
             </form>
         </div>
 
@@ -129,7 +129,7 @@
         
         <!-- Right Content Area -->
 
-        <div class="m-6 col-span-3">
+        <div class="m-6 w-9/12 ml-auto pl-1">
             <div class=" grid grid-cols-3 gap-6">
                 <div class="bg-gray-100 h-full">
                     <div class="py-14 px-12 sm:px-20 md:px-28">
