@@ -60,10 +60,10 @@
     <!-- Header Section End -->
 
     <!-- Single Page Header -->
-    <div class="py-8 md:py-20 bg-gray-100">
+    <div class="py-8 md:py-16 bg-gray-100 px-4 md:px-0">
         <div class="container mx-auto">
             <div class="md:pr-10 flex flex-wrap content-center justify-between flex-col md:flex-row pb-5 md:pb-0">
-                <div class="flex justify-start p-3 md:pt-5 md:pb-5 md:pr-5">
+                <div class="flex justify-start md:p-3 md:pt-5 md:pb-5 md:pr-5">
                     <img class="hidden md:block mt-3 mr-5 w-28 h-28 rounded" src="assets/images/company-logo-01.png" alt="">
 
                     <div class="px-0 md:px-3 flex flex-col">
@@ -72,10 +72,10 @@
                         <h3 class="text-xl mt-3 pb-2 text-gray-700">
                             About the Employer
                         </h3>
-                        <ul class="flex flex-col md:flex-row md:space-x-3 text-lg text-gray-500">
-                            <li><a href="#"><i class="far mr-2 fa-building"></i>Hexagon</a></li>
+                        <ul class="flex flex-col md:flex-row space-y-2 md:space-x-3 text-lg text-gray-500">
+                            <li class="md:self-center"><a href="#"><i class="far mr-2 fa-building"></i>Hexagon</a></li>
                             <li>
-                                <div class="flex justify-center">
+                                <div class="flex md:justify-center">
                                     <span class="bg-yellow-400 px-2 rounded text-base text-white mr-2">4.9</span>
                                     
                                     <div class="flex text-xl text-yellow-400">
@@ -88,12 +88,12 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="flex justify-center text-xl space-x-3">
+                                <div class="flex md:justify-center text-xl space-x-3">
                                     <span>🇧🇩</span>
                                     <h2 class="text-gray-800">John Doe</h2>
                                 </div>
                             </li>
-                            <li class="flex align-middle text-white text-sm font-semibold">
+                            <li class="flex md:align-middle text-white text-sm font-semibold">
                                 <i class="fas px-2 py-2 rounded-l bg-green-500 fa-check self-center"></i>
                                 <span class="px-2 py-1 rounded-r bg-green-600">Verified</span>
                             </li>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
 
-                <div href="#" class="rounded-lg mb-6 py-6 md:py-10 px-12 bg-gray-50 shadow-xl md:m-7">
+                <div href="#" class="rounded-lg mb-6 mt-3 md:mt-0 py-6 md:py-10 px-8 bg-gray-50 shadow-xl md:m-7">
                     <h2 class="text-xl text-gray-500">Annual Salary</h2>
                     <h3 class="text-3xl font-thin text-gray-700">$35k - $38k</h3>
                 </div>
@@ -109,10 +109,10 @@
         </div>
     </div>
 
-    <div class="py-20">
+    <div class="py-16">
         <div class="container mx-auto">
-            <div class="grid grid-cols-4 grid-flow-col">
-                <div class="flex flex-col col-span-3 pr-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-flow-col grid-flow-row">
+                <div class="flex flex-col col-span-3 pr-12 pl-4 md:pl-0">
                     <h1 class="text-2xl text-gray-700 mb-4">Job Description</h1>
 
                     <p class="text-gray-500 text-justify mb-6 mt-2">
@@ -127,13 +127,13 @@
 
                     <button class="border shadow-2xl my-4 w-max px-4 py-2 hover:bg-blue-700 text-gray-600 hover:text-white rounded transition"><i class="fas fa-road mr-2"></i>Street View</button>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7300.721234227262!2d90.36767238436181!3d23.805772362133663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d6f6b8c2ff%3A0x3b138861ee9c8c30!2sMirpur%2010%20Roundabout%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1622295504249!5m2!1sen!2sbd" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7300.721234227262!2d90.36767238436181!3d23.805772362133663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d6f6b8c2ff%3A0x3b138861ee9c8c30!2sMirpur%2010%20Roundabout%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1622295504249!5m2!1sen!2sbd" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                     <h1 class="text-2xl text-gray-700 mb-4 mt-6">Similar Jobs</h1>
                     
                 </div>
 
-                <div class="flex flex-col col-span-1">
+                <div class="flex flex-col col-span-1 p-4 md:p-0">
                     <a href="#" class="group block bg-blue-700 rounded text-center py-3 mt-3 text-white transform hover:-translate-y-1 shadow-lg duration-300 transition">Apply Now &rarr;</a>
 
                     <div class="mt-6">
@@ -199,15 +199,34 @@
                         </div>
                     </form>
 
-                    <div class="flex">
-                        
+                    <div class="flex mt-6 space-x-3">
+                        <i class="fas fa-share-alt py-3 px-4 bg-gray-100 rounded"></i>
+                        <h2 class="self-center text-lg text-gray-600">Interesting? <a href="" class="text-blue-600">Share It!</a></h2>
+                    </div>
+
+                    <div class="flex mt-6 text-white">
+                        <a href="" class="py-2 px-4 bg-blue-800 rounded-l">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="" class="py-2 px-4 bg-blue-500">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="" class="py-2 px-4 bg-red-600">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+
+                        <a href="" class="py-2 px-4 bg-blue-600 rounded-r">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container mx-auto">
-            <div class="grid grid-cols-3 gap-8 m-2">
+        <div class="container mx-auto px-4 md:px-0">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 m-2">
                 <div class="flex flex-col shadow-2xl rounded-xl transition duration-300 transform hover:-translate-y-1 cursor-pointer">
                     <div class="flex px-8 py-6">
                         <img class="w-16 p-2 mr-4 rounded-xl" src="assets/images/company-logo-02.png" alt="">
