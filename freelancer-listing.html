@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamurjor</title>
+
+    <base href="index.html">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <!-- Header Section Start -->
+    <div class="header-wrapper px-6 md:px-12 py-6 shadow-sm filter drop-shadow-lg bg-white sticky top-0 z-50">
+        <div class="flex justify-between">
+            <div class="flex flex-start space-x-6 divide-x">
+                <!-- Brand Logo -->
+                <h1 class="text-2xl">Mamurjor</h1>
+
+                <!-- Navigation -->
+                <nav class="self-center">
+                    <ul class="flex space-x-4 text-gray-600 ml-6">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">Find Work</a></li>
+                        <li><a href="#">For Employers</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Header Right Side Widgets -->
+            <div class="flex space-x-6 flex-wrap content-center">
+                <div class="flex space-x-4 flex-wrap content-center border-l pl-4">
+                    <i class="far fa-bell"></i>
+                    <i class="far fa-envelope"></i>
+                </div>
+
+                <div class="border-l pl-4">
+                    <img class="w-8 bg-gray-200 rounded-full" src="assets/images/profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Main Content Area -->
+    <div class="flex justify-between">
+        <!-- Left Sidebar - Filter Area -->
+        <div class="w-3/12 p-4 md:p-12 bg-gray-100 overflow-scroll fixed max-h-screen top-12">
+            <form action="">
+                <label for="" class="block text-xl text-gray-600">Location</label>
+                <div class="flex justify-between bg-white border rounded px-3 py-2 mt-2">
+                    <input type="text" class="w-full outline-none " placeholder="Location">
+                    <i class="fas fa-map-marker-alt w-max self-center"></i>
+                </div>
+
+                <label for="" class="block text-xl text-gray-600 mt-6 mb-2">Category</label>
+                
+                <div class="relative">
+                <select name="" id="" class="appearance-none bg-white text-gray-700 w-full py-2 px-3 rounded">
+                    <option>All Categories</option>
+                    <option value="web-design">Web Design</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="laravel">Laravel</option>
+                    <option value="vue">Vue</option>
+                    <option value="react">React</option>
+                    <option value="wordpress">Wordpress</option>
+                    <option value="domain-hosting">Domain & Hosting</option>
+                </select>
+
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+
+                </div>
+
+                <label for="" class="block text-xl text-gray-600 mt-6 mb-2">Keywords</label>
+                
+                <div class="w-full flex justify-between bg-white border rounded px-3 py-2 mt-2">
+                    <input type="text" class="w-full outline-none " placeholder="Keyword">
+                    <button onclick="">
+                        <i class="fas fa-plus w-max self-center bg-blue-700 text-white p-2 rounded"></i>
+                    </button>
+                </div>
+
+                <label for="" class="block text-xl text-gray-600 mt-6 mb-2">Hourly Rate</label>
+                
+                <div onclick="" class="w-full py-2 mt-2">
+                    <input type="range" class="w-full outline-none " placeholder="Keyword">
+                </div>
+
+                <div class="space-y-1">
+                    <button class="w-max bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">html</button>
+                    <button class="w-max bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">front-end-dev</button>
+                    <button class="w-max bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">wordpress</button>
+                    <button class="w-max bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">react</button>
+                    <button class="w-max bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">vue</button>
+                    <button class="w-max bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">laravel</button>
+                    <button class="w-max bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">angular</button>
+                    <button class="w-max bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">php</button>
+                    <button class="w-max bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">angular</button>
+                </div>
+                
+                <div class="w-full flex justify-between bg-white border rounded px-3 py-2 mt-2">
+                    <input type="text" class="w-full outline-none " placeholder="Add More Skills">
+                    <button onclick="">
+                        <i class="fas fa-plus w-max self-center bg-blue-700 text-white p-2 rounded"></i>
+                    </button>
+                </div>
+
+                <button class="w-full block bg-blue-700 rounded text-center py-3 mt-3 text-white transform hover:-translate-y-1 shadow-lg duration-300 transition">Submit</button>
+            </form>
+        </div>
+
+        <!-- Left Content Area -->
+        
+        <!-- Right Content Area -->
+
+        <div class="m-6 w-9/12 ml-auto pl-1">
+            <div class=" grid grid-cols-3 gap-6">
+                <div class="bg-gray-100 h-full">
+                    <div class="py-14 px-12 sm:px-20 md:px-28">
+                        <img class="rounded-full w-28 mx-auto" src="assets/images/profile.png" alt="">
+                        <div class="flex justify-center text-xl mt-3 space-x-3">
+                            <h2 class="text-gray-800">John Doe</h2>
+                            <span>🇧🇩</span>
+                        </div>
+
+                        <h5 class="text-center text-gray-600">Front-End Developer</h5>
+        
+                        <div class="flex justify-center mt-3">
+                            <span class="bg-yellow-400 px-2 rounded text-base text-white mr-2">4.9</span>
+                            
+                            <div class="flex text-xl text-yellow-400">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-6 px-3 md:px-10 bg-gray-200">
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Location</span>
+                                <span class="text-gray-700"><i class="fas mr-1 fa-map-marker-alt"></i>New York</span>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Rate</span>
+                                <span class="text-gray-700"><i class="fas mr-1 fa-dollar-sign"></i>50/hr
+                            </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Job Success</span>
+                                <span class="text-gray-700">98%</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="group block bg-blue-700 rounded text-center py-2 mt-3 text-white">View Profile<span class="text-blue-700 group-hover:text-white transition-all">&rarr;</span></a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 h-full">
+                    <div class="py-14 px-12 sm:px-20 md:px-28">
+                        <img class="rounded-full w-28 mx-auto" src="assets/images/profile.png" alt="">
+                        <div class="flex justify-center text-xl mt-3 space-x-3">
+                            <h2 class="text-gray-800">John Doe</h2>
+                            <span>🇧🇩</span>
+                        </div>
+
+                        <h5 class="text-center text-gray-600">Front-End Developer</h5>
+        
+                        <div class="flex justify-center mt-3">
+                            <span class="bg-yellow-400 px-2 rounded text-base text-white mr-2">4.9</span>
+                            
+                            <div class="flex text-xl text-yellow-400">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-6 px-3 md:px-10 bg-gray-200">
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Location</span>
+                                <span class="text-gray-700"><i class="fas mr-1 fa-map-marker-alt"></i>New York</span>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Rate</span>
+                                <span class="text-gray-700"><i class="fas mr-1 fa-dollar-sign"></i>50/hr
+                            </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Job Success</span>
+                                <span class="text-gray-700">98%</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="group block bg-blue-700 rounded text-center py-2 mt-3 text-white">View Profile<span class="text-blue-700 group-hover:text-white transition-all">&rarr;</span></a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 h-full">
+                    <div class="py-14 px-12 sm:px-20 md:px-28">
+                        <img class="rounded-full w-28 mx-auto" src="assets/images/profile.png" alt="">
+                        <div class="flex justify-center text-xl mt-3 space-x-3">
+                            <h2 class="text-gray-800">John Doe</h2>
+                            <span>🇧🇩</span>
+                        </div>
+
+                        <h5 class="text-center text-gray-600">Front-End Developer</h5>
+        
+                        <div class="flex justify-center mt-3">
+                            <span class="bg-yellow-400 px-2 rounded text-base text-white mr-2">4.9</span>
+                            
+                            <div class="flex text-xl text-yellow-400">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-6 px-3 md:px-10 bg-gray-200">
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Location</span>
+                                <span class="text-gray-700"><i class="fas mr-1 fa-map-marker-alt"></i>New York</span>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Rate</span>
+                                <span class="text-gray-700"><i class="fas mr-1 fa-dollar-sign"></i>50/hr
+                            </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Job Success</span>
+                                <span class="text-gray-700">98%</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="group block bg-blue-700 rounded text-center py-2 mt-3 text-white">View Profile<span class="text-blue-700 group-hover:text-white transition-all">&rarr;</span></a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 h-full">
+                    <div class="py-14 px-12 sm:px-20 md:px-28">
+                        <img class="rounded-full w-28 mx-auto" src="assets/images/profile.png" alt="">
+                        <div class="flex justify-center text-xl mt-3 space-x-3">
+                            <h2 class="text-gray-800">John Doe</h2>
+                            <span>🇧🇩</span>
+                        </div>
+
+                        <h5 class="text-center text-gray-600">Front-End Developer</h5>
+        
+                        <div class="flex justify-center mt-3">
+                            <span class="bg-yellow-400 px-2 rounded text-base text-white mr-2">4.9</span>
+                            
+                            <div class="flex text-xl text-yellow-400">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-6 px-3 md:px-10 bg-gray-200">
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Location</span>
+                                <span class="text-gray-700"><i class="fas mr-1 fa-map-marker-alt"></i>New York</span>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Rate</span>
+                                <span class="text-gray-700"><i class="fas mr-1 fa-dollar-sign"></i>50/hr
+                            </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Job Success</span>
+                                <span class="text-gray-700">98%</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="group block bg-blue-700 rounded text-center py-2 mt-3 text-white">View Profile<span class="text-blue-700 group-hover:text-white transition-all">&rarr;</span></a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 h-full">
+                    <div class="py-14 px-12 sm:px-20 md:px-28">
+                        <img class="rounded-full w-28 mx-auto" src="assets/images/profile.png" alt="">
+                        <div class="flex justify-center text-xl mt-3 space-x-3">
+                            <h2 class="text-gray-800">John Doe</h2>
+                            <span>🇧🇩</span>
+                        </div>
+
+                        <h5 class="text-center text-gray-600">Front-End Developer</h5>
+        
+                        <div class="flex justify-center mt-3">
+                            <span class="bg-yellow-400 px-2 rounded text-base text-white mr-2">4.9</span>
+                            
+                            <div class="flex text-xl text-yellow-400">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-6 px-3 md:px-10 bg-gray-200">
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Location</span>
+                                <span class="text-gray-700"><i class="fas mr-1 fa-map-marker-alt"></i>New York</span>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Rate</span>
+                                <span class="text-gray-700"><i class="fas mr-1 fa-dollar-sign"></i>50/hr
+                            </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-sm text-gray-500">Job Success</span>
+                                <span class="text-gray-700">98%</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="group block bg-blue-700 rounded text-center py-2 mt-3 text-white">View Profile<span class="text-blue-700 group-hover:text-white transition-all">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="px-6 md:px-12 py-6 shadow-sm filter drop-shadow-lg sticky top-0 border-b border-gray-700">
+            <div class="container mx-auto">
+                <div class="flex justify-between">
+                    <div class="flex flex-start space-x-6 divide-x ">
+                        <!-- Brand Logo -->
+                        <h1 class="text-xl sm:text-2xl text-white">Mamurjor</h1>
+                    </div>
+        
+                    <!-- Header Right Side Widgets -->
+                    <div class="flex space-x-6 flex-wrap content-center">
+                        <div class="flex text-white space-x-4 flex-wrap content-center border-gray-600 border-l pl-4">
+                            <i class="far fa-bell"></i>
+                            <i class="far fa-envelope"></i>
+                        </div>
+        
+                        <div class="border-l border-gray-600 pl-4">
+                            <select name="" id="" class="bg-gray-700 rounded border-none px-2 py-1 text-sm md:text-base text-white">
+                                <option>English</option>
+                                <option value="bengali">Bengali</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6">
+            <div class="py-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">For Candidates</h5>
+                        <hr width="70">
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="#">Add Resume</a></li>
+                            <li><a href="#">Job Alerts</a></li>
+                            <li><a href="#">My Bookmarks</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">For Employers</h5>
+                        <hr width="70">
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Browse Candidates</a></li>
+                            <li><a href="#">Post a Job</a></li>
+                            <li><a href="#">Post a Task</a></li>
+                            <li><a href="#">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">Useful Links</h5>
+                        <hr width="70">
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">My Account</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <h5 class="text-gray-100 text-lg"><i class="far mr-2 fa-envelope"></i>Sign Up For a Newsletter</h5>
+                        <hr width="70">
+                        <p class="py-3 text-gray-400">
+                            Weekly breaking news, analysis and cutting edge<br>advices on job searching.
+                        </p>
+
+                        <form action="">
+                            <div class="flex flex-row">
+                                <input class="w-full outline-none py-3 pl-3 rounded bg-gray-900 text-gray-100" type="email" placeholder="Enter your email address">
+                                <button class="bg-blue-700 hover:bg-white ml-1 rounded px-5 text-white hover:text-black transition" type="submit"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-12 py-6 shadow-sm filter drop-shadow-lg sticky top-0 z-50 border-t border-gray-700">
+            <div class="container mx-auto text-center text-gray-300">
+                <p>
+                    Copyright @ <a href="#" class="font-semibold text-gray-100 hover:underline">Mamurjor IT</a> | Designed & Developed by - Mamurjor Team
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
