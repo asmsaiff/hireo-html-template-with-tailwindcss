@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamurjor</title>
+
+    <base href="index.html">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .home-page-header {
+            background-image: url("assets/images/home-background.jpg");
+            background-position: center center;
+        }
+        .breadcrumb  a::after{
+            content: "";
+            display: inline-block;
+            height: 0;
+            width: 0;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid #aaa;
+            font-size: 14px;
+            margin-right: 12px;
+            margin-left: 10px;
+        }
+        .breadcrumb  a:last-child:after{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section Start -->
+    <div class="header-wrapper px-6 md:px-12 py-6 shadow-sm filter drop-shadow-lg bg-white sticky top-0 z-50">
+        <div class="flex justify-between">
+            <div class="flex flex-start space-x-6 divide-x">
+                <!-- Brand Logo -->
+                <h1 class="text-2xl">Mamurjor</h1>
+
+                <!-- Navigation -->
+                <nav class="self-center">
+                    <ul class="flex space-x-4 text-gray-600 ml-6">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">Find Work</a></li>
+                        <li><a href="#">For Employers</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Header Right Side Widgets -->
+            <div class="flex space-x-6 flex-wrap content-center">
+                <div class="flex space-x-4 flex-wrap content-center border-l pl-4">
+                    <i class="far fa-bell"></i>
+                    <i class="far fa-envelope"></i>
+                </div>
+
+                <div class="border-l pl-4">
+                    <img class="w-8 bg-gray-200 rounded-full" src="assets/images/profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Single Page Header -->
+    <div class="home-page-header ">
+        <div class="bg-gradient-home-page-header py-8 md:py-16 px-4 md:px-0">
+            <div class="container mx-auto">
+                <div class="md:pr-10 flex flex-wrap content-center justify-between flex-col md:flex-row pb-5 md:pb-0">
+                    <div class="flex justify-start md:p-3 md:pt-5 md:pb-5 md:pr-5">
+                        <img class="hidden md:block mt-3 mr-5 w-28 h-28 rounded" src="assets/images/company-logo-01.png" alt="">
+
+                        <div class="px-0 md:px-3 flex flex-col">
+                            <h2 class="text-3xl pt-1 pb-3 text-gray-700">Acodia</h2>
+
+                            <h3 class="text-xl mt-1 pb-2 text-gray-700">
+                                Software House
+                            </h3>
+
+                            <div class="grid grid-cols-4 space-x-3">
+                                <div class="flex md:justify-center">
+                                    <span class="bg-yellow-400 px-2 rounded text-base text-white mr-2">4.9</span>
+                                    
+                                    <div class="flex text-xl text-yellow-400">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex md:justify-center text-xl space-x-2 ">
+                                    <span>🇧🇩</span>
+                                    <h2 class="text-gray-800">Bangladesh</h2>
+                                </div>
+
+                                <div class="flex md:align-middle text-white font-semibold">
+                                    <i class="fas text-md px-2 py-2 rounded-l bg-green-500 fa-check self-center"></i>
+                                    <span class="text-sm px-2 py-1 rounded-r bg-green-600">Verified</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="breadcrumb flex w-max md:self-center bg-gray-800 text-gray-200 px-3 py-2 rounded text-sm md:text-base">
+                        <a href="#">Home</a>
+                        <a href="#">Find Work</a>
+                        <a href="#">Browse Companies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-16">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-flow-col grid-flow-row">
+
+                <!-- Left Content Area -->
+                <div class="flex flex-col col-span-3 pr-4 sm:pr-12 pl-4 md:pl-0">
+                    <h1 class="text-2xl text-gray-700 mb-4">Project Description</h1>
+
+                    <p class="text-gray-500 text-justify mb-6 mt-2">
+                        Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+                        <br><br>
+                        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+                        <br><br>
+                        Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+                    </p>
+
+                    <div class="mt-12">
+                        <div class="container mx-auto">
+                            <div class="px-12 py-6 bg-gray-200 mb-4 rounded">
+                                <div class="flex text-xl">
+                                    <i class="fas fa-users mr-2 text-blue-700"></i>
+                                    <h2 class="-mt-1 text-gray-700">Open Position</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mx-auto">
+                            <div class="bg-gray-50 px-4 md:px-0 md:pr-10 flex flex-wrap justify-between flex-col md:flex-row pb-5 md:pb-0">
+                                <div class="flex justify-start mb-3 md:mb-0 md:p-3 md:pt-5 md:pb-5 md:pr-5 md:self-center">                
+                                    <div class="px-0 md:px-3 flex flex-col">
+                                        <h2 class="text-2xl pt-1 pb-3 text-gray-700">React Developer<span class="ml-2">🇧🇩</span></h2>
+                                        <ul class="flex flex-col md:flex-row md:space-x-3 text-gray-500">
+                                            <li><a href="#"><i class="fas mr-2 fa-map-marker-alt"></i>San Francisco</a></li>
+                                            <li><a href="#"><i class="fas mr-2 fa-briefcase"></i>Full Time</a></li>
+                                            <li><a href="#"><i class="far mr-2 fa-clock"></i>3 days ago</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                
+                                <button class="md:self-center rounded-full w-10 h-10 bg-gray-300 shadow-xl text-gray-400 cursor-pointer hover:bg-black hover:text-white transition duration-200">
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+
+                            <div class="bg-gray-50 px-4 md:px-0 md:pr-10 flex flex-wrap justify-between flex-col md:flex-row pb-5 md:pb-0">
+                                <div class="flex justify-start mb-3 md:mb-0 md:p-3 md:pt-5 md:pb-5 md:pr-5 md:self-center">                
+                                    <div class="px-0 md:px-3 flex flex-col">
+                                        <h2 class="text-2xl pt-1 pb-3 text-gray-700">Junior Front end Developer<span class="ml-2">🇧🇩</span></h2>
+                                        <ul class="flex flex-col md:flex-row md:space-x-3 text-gray-500">
+                                            <li><a href="#"><i class="fas mr-2 fa-map-marker-alt"></i>San Francisco</a></li>
+                                            <li><a href="#"><i class="fas mr-2 fa-briefcase"></i>Full Time</a></li>
+                                            <li><a href="#"><i class="far mr-2 fa-clock"></i>2 days ago</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                
+                                <button class="md:self-center rounded-full w-10 h-10 bg-gray-300 shadow-xl text-gray-400 cursor-pointer hover:bg-black hover:text-white transition duration-200">
+                                    <i class="fas fa-star"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="container mx-auto mt-4">
+                            <div class="px-12 py-6 bg-gray-200 mb-4 rounded">
+                                <div class="flex text-xl">
+                                    <i class="far fa-thumbs-up mr-2 text-blue-700"></i>
+                                    <h2 class="-mt-1 text-gray-700">Reviews</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mx-auto">
+                            <div class="bg-gray-50 px-4 md:px-0 md:pr-10 flex flex-wrap justify-between flex-col md:flex-row pb-5 md:pb-0">
+                                <div class="flex justify-start mb-3 md:mb-0 md:p-3 md:pt-5 md:pb-5 md:pr-5 md:self-center">                
+                                    <div class="px-0 md:px-3 flex flex-col justify-start">
+                                        <h2 class="text-xl pt-1 text-gray-700">Doing things the right way</h2>
+                                        <h4 class="text-sm text-gray-600">Anonymous Employee</h4>
+
+                                        <div class="flex mt-2 gap-2 pb-3">
+                                            <div class="flex">
+                                                <span class="bg-yellow-400 px-2 rounded text-sm text-white">4.9</span>
+                                                
+                                                <div class="flex text-md text-yellow-400">
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="text-gray-600">
+                                                <a href="#"><i class="far mr-2 fa-clock"></i>2 days ago</a>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                            Great company and especially ideal for the career-minded individual. The company is large enough to offer a variety of jobs in all kinds of interesting locations. Even if you never change roles, your job changes and evolves as the company grows, keeping things fresh.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-start mb-3 md:mb-0 md:p-3 md:pt-5 md:pb-5 md:pr-5 md:self-center">                
+                                    <div class="px-0 md:px-3 flex flex-col justify-start">
+                                        <h2 class="text-xl pt-1 text-gray-700">Doing things the right way</h2>
+                                        <h4 class="text-sm text-gray-600">Anonymous Employee</h4>
+
+                                        <div class="flex mt-2 gap-2 pb-3">
+                                            <div class="flex">
+                                                <span class="bg-yellow-400 px-2 rounded text-sm text-white">4.9</span>
+                                                
+                                                <div class="flex text-md text-yellow-400">
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="text-gray-600">
+                                                <a href="#"><i class="far mr-2 fa-clock"></i>2 days ago</a>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                            Great company and especially ideal for the career-minded individual. The company is large enough to offer a variety of jobs in all kinds of interesting locations. Even if you never change roles, your job changes and evolves as the company grows, keeping things fresh.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-start mb-3 md:mb-0 md:p-3 md:pt-5 md:pb-5 md:pr-5 md:self-center">                
+                                    <div class="px-0 md:px-3 flex flex-col justify-start">
+                                        <h2 class="text-xl pt-1 text-gray-700">Doing things the right way</h2>
+                                        <h4 class="text-sm text-gray-600">Anonymous Employee</h4>
+
+                                        <div class="flex mt-2 gap-2 pb-3">
+                                            <div class="flex">
+                                                <span class="bg-yellow-400 px-2 rounded text-sm text-white">4.9</span>
+                                                
+                                                <div class="flex text-md text-yellow-400">
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="text-gray-600">
+                                                <a href="#"><i class="far mr-2 fa-clock"></i>2 days ago</a>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                            Great company and especially ideal for the career-minded individual. The company is large enough to offer a variety of jobs in all kinds of interesting locations. Even if you never change roles, your job changes and evolves as the company grows, keeping things fresh.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="flex flex-col col-span-2 p-4 md:p-0">
+                    <div class="mt-6">
+                        <div class="flex flex-col rounded">
+                            <h1 class="text-xl text-gray-700 mb-3">Location</h1>
+
+                            <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7300.721234227262!2d90.36767238436181!3d23.805772362133663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d6f6b8c2ff%3A0x3b138861ee9c8c30!2sMirpur%2010%20Roundabout%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1622295504249!5m2!1sen!2sbd" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                    <h1 class="text-xl text-gray-700 mt-3">Social Profile</h1>
+                    <div class="flex mt-2 text-gray-400 text-2xl">
+                        <a href="" class="py-1 px-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="" class="py-1 px-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="" class="py-1 px-2">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+
+                        <a href="" class="py-1 px-2">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                    <h1 class="text-2xl text-gray-700 mb-4 mt-6">Bookmark or Share</h1>
+
+                    <button class="flex align-middle text-white text-lg">
+                        <i class="fas fa-star px-2 py-3 rounded-l bg-gray-600 self-center"></i>
+                        <span class="px-2 py-1 rounded-r bg-gray-700">Bookmark</span>
+                    </button>
+                    
+                    <form action="" class="mt-5">
+                        <div class="flex flex-row">
+                            <input class="w-full border outline-none py-3 px-3 rounded-l text-gray-700" type="email" value="http://127.0.0.1:5500/single.html" readonly>
+
+                            <button class="bg-blue-700 rounded-r px-5 text-white transition" type="copy"><i class="far fa-copy"></i></button>
+                        </div>
+                    </form>
+
+                    <div class="flex mt-6 space-x-3">
+                        <i class="fas fa-share-alt py-3 px-4 bg-gray-100 rounded"></i>
+                        <h2 class="self-center text-lg text-gray-600">Interesting? <a href="" class="text-blue-600">Share It!</a></h2>
+                    </div>
+
+                    <div class="flex mt-6 text-white">
+                        <a href="" class="py-2 px-4 bg-blue-800 rounded-l">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="" class="py-2 px-4 bg-blue-500">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="" class="py-2 px-4 bg-red-600">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+
+                        <a href="" class="py-2 px-4 bg-blue-600 rounded-r">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="px-6 md:px-12 py-6 shadow-sm filter drop-shadow-lg sticky top-0 border-b border-gray-700">
+            <div class="container mx-auto">
+                <div class="flex justify-between">
+                    <div class="flex flex-start space-x-6 divide-x ">
+                        <!-- Brand Logo -->
+                        <h1 class="text-xl sm:text-2xl text-white">Mamurjor</h1>
+                    </div>
+        
+                    <!-- Header Right Side Widgets -->
+                    <div class="flex space-x-6 flex-wrap content-center">
+                        <div class="flex text-white space-x-4 flex-wrap content-center border-gray-600 border-l pl-4">
+                            <i class="far fa-bell"></i>
+                            <i class="far fa-envelope"></i>
+                        </div>
+        
+                        <div class="border-l border-gray-600 pl-4">
+                            <select name="" id="" class="bg-gray-700 rounded border-none px-2 py-1 text-sm md:text-base text-white">
+                                <option>English</option>
+                                <option value="bengali">Bengali</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6">
+            <div class="py-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">For Candidates</h5>
+                        <hr width="70">
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="#">Add Resume</a></li>
+                            <li><a href="#">Job Alerts</a></li>
+                            <li><a href="#">My Bookmarks</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">For Employers</h5>
+                        <hr width="70">
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Browse Candidates</a></li>
+                            <li><a href="#">Post a Job</a></li>
+                            <li><a href="#">Post a Task</a></li>
+                            <li><a href="#">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">Useful Links</h5>
+                        <hr width="70">
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">My Account</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <h5 class="text-gray-100 text-lg"><i class="far mr-2 fa-envelope"></i>Sign Up For a Newsletter</h5>
+                        <hr width="70">
+                        <p class="py-3 text-gray-400">
+                            Weekly breaking news, analysis and cutting edge<br>advices on job searching.
+                        </p>
+
+                        <form action="">
+                            <div class="flex flex-row">
+                                <input class="w-full outline-none py-3 pl-3 rounded bg-gray-900 text-gray-100" type="email" placeholder="Enter your email address">
+                                <button class="bg-blue-700 hover:bg-white ml-1 rounded px-5 text-white hover:text-black transition" type="submit"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-12 py-6 shadow-sm filter drop-shadow-lg sticky top-0 z-50 border-t border-gray-700">
+            <div class="container mx-auto text-center text-gray-300">
+                <p>
+                    Copyright @ <a href="#" class="font-semibold text-gray-100 hover:underline">Mamurjor IT</a> | Designed & Developed by - Mamurjor Team
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
