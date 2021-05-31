@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamurjor</title>
+
+    <base href="index.html">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .home-page-header {
+            background-image: url("assets/images/home-background.jpg");
+            background-position: center center;
+        }
+        .breadcrumb  a::after{
+            content: "";
+            display: inline-block;
+            height: 0;
+            width: 0;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid #aaa;
+            font-size: 14px;
+            margin-right: 12px;
+            margin-left: 10px;
+        }
+        .breadcrumb  a:last-child:after{
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section Start -->
+    <div class="header-wrapper px-6 md:px-12 py-6 shadow-sm filter drop-shadow-lg bg-white sticky top-0 z-50">
+        <div class="flex justify-between">
+            <div class="flex flex-start space-x-6 divide-x">
+                <!-- Brand Logo -->
+                <h1 class="text-2xl">Mamurjor</h1>
+
+                <!-- Navigation -->
+                <nav class="self-center">
+                    <ul class="flex space-x-4 text-gray-600 ml-6">
+                        <li><a href="/">Home</a></li>
+
+                        <li class="dropdown inline-block relative">
+                            <button class="inline-flex items-center">
+                              <span class="mr-1">Find Work</span>
+                              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                            </button>
+                            
+                            <ul class="dropdown-menu absolute hidden bg-gray-800 text-gray-50 pt-5 w-64 rounded py-3">
+                              <li class=""><a class="text-gray-400 hover:text-gray-50 transition duration-300 -mt-5 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                              <li class=""><a class="text-gray-400 hover:text-gray-50 transition duration-300 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+                              <li class=""><a class="text-gray-400 hover:text-gray-50 transition duration-300 py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="employer-profile.html">For Employers</a></li>
+                        <li><a href="course.html">Training</a></li>
+                        <li><a href="single.html">About Us</a></li>
+                        <li><a href="single.html">Contact Us</a></li>
+                        <li><a href="course.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Header Right Side Widgets -->
+            <div class="flex space-x-6 flex-wrap content-center">
+                <div class="flex space-x-4 flex-wrap content-center border-l pl-4">
+                    <div class="relative">
+                        <i class="far fa-bell"></i>
+                        <span class="absolute bg-blue-800 text-xs text-white px-1 rounded-full -mt-1 -ml-2">4</span>
+                    </div>
+                    <div class="relative">
+                        <i class="far fa-envelope"></i>
+                        <span class="absolute bg-blue-800 text-xs text-white px-1 rounded-full -mt-1 -ml-2">3</span>
+                    </div>
+                </div>
+
+                <div class="border-l pl-4">
+                    <div class="relative">
+                        <img class="w-10 bg-gray-200 rounded-full" src="assets/images/profile.png" alt="">
+                        <span class="w-3 h-3 absolute bg-green-500 text-xs text-white px-1 rounded-full ml-7 -mt-3 shadow-2xl"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Single Page Header -->
+    <div class="home-page-header ">
+        <div class="bg-gradient-home-page-header py-8 md:py-12 px-4 md:px-0">
+            <div class="container mx-auto">
+                <div class="md:pr-10 flex flex-wrap content-center justify-between flex-col md:flex-row pb-5 md:pb-0">
+                    <div class="flex justify-start md:p-3 md:pt-5 md:pb-5 md:pr-5">
+                        <img class="mt-3 mr-5 w-28 h-28 rounded-full" src="assets/images/profile.png" alt="">
+
+                        <div class="px-0 md:px-3 flex flex-col">
+                            <h2 class="text-2xl pt-1 text-gray-700 pb-3">David Peterson </h2>
+
+                            <h3 class="text-xl pb-2 text-gray-700">
+                                Software House
+                            </h3>
+
+                            <div class="space-y-2 sm:space-y-0 sm:flex sm:space-x-3">
+                                <div class="flex md:justify-center">
+                                    <span class="bg-yellow-400 px-2 rounded text-base text-white mr-2">4.9</span>
+                                    
+                                    <div class="flex text-xl text-yellow-400">
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex md:justify-center text-xl space-x-2 ">
+                                    <span>🇧🇩</span>
+                                    <h2 class="text-gray-800">Bangladesh</h2>
+                                </div>
+
+                                <div class="flex md:align-middle text-white font-semibold">
+                                    <i class="fas text-md px-2 py-2 rounded-l bg-green-500 fa-check self-center"></i>
+                                    <span class="text-sm px-2 py-1 rounded-r bg-green-600">Verified</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-flow-col grid-flow-row">
+
+                <!-- Left Content Area -->
+                <div class="flex flex-col col-span-3 pr-4 sm:pr-12 pl-4 md:pl-0">
+                    <h1 class="text-2xl text-gray-700 mb-4">About Me</h1>
+
+                    <p class="text-gray-500 text-justify mb-6 mt-2">
+                        Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+                        <br><br>
+                        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+                    </p>
+
+                    <div class="mt-12">
+                        <div class="container mx-auto mt-4">
+                            <div class="px-12 py-6 bg-gray-200 mb-4 rounded">
+                                <div class="flex text-xl">
+                                    <i class="far fa-thumbs-up mr-2 text-blue-700"></i>
+                                    <h2 class="-mt-1 text-gray-700">Work History & Feedback</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mx-auto">
+                            <div class="bg-gray-50 px-4 md:px-0 md:pr-10 flex flex-wrap justify-between flex-col md:flex-row pb-5 md:pb-0">
+                                <div class="flex justify-start mb-3 md:mb-0 md:p-3 md:pt-5 md:pb-5 md:pr-5 md:self-center">                
+                                    <div class="px-0 md:px-3 flex flex-col justify-start">
+                                        <h2 class="text-xl pt-1 text-gray-700">Doing things the right way</h2>
+                                        <h4 class="text-sm text-gray-600">Anonymous Employee</h4>
+
+                                        <div class="flex mt-2 gap-2 pb-3">
+                                            <div class="flex">
+                                                <span class="bg-yellow-400 px-2 rounded text-sm text-white">4.9</span>
+                                                
+                                                <div class="flex text-md text-yellow-400">
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="text-gray-600">
+                                                <a href="#"><i class="far mr-2 fa-clock"></i>2 days ago</a>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                            Great company and especially ideal for the career-minded individual. The company is large enough to offer a variety of jobs in all kinds of interesting locations. Even if you never change roles, your job changes and evolves as the company grows, keeping things fresh.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-start mb-3 md:mb-0 md:p-3 md:pt-5 md:pb-5 md:pr-5 md:self-center">                
+                                    <div class="px-0 md:px-3 flex flex-col justify-start">
+                                        <h2 class="text-xl pt-1 text-gray-700">Doing things the right way</h2>
+                                        <h4 class="text-sm text-gray-600">Anonymous Employee</h4>
+
+                                        <div class="flex mt-2 gap-2 pb-3">
+                                            <div class="flex">
+                                                <span class="bg-yellow-400 px-2 rounded text-sm text-white">4.9</span>
+                                                
+                                                <div class="flex text-md text-yellow-400">
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                </div>
+                                            </div>
+            
+                                            <div class="text-gray-600">
+                                                <a href="#"><i class="far mr-2 fa-clock"></i>2 days ago</a>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                            Great company and especially ideal for the career-minded individual. The company is large enough to offer a variety of jobs in all kinds of interesting locations. Even if you never change roles, your job changes and evolves as the company grows, keeping things fresh.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="container mx-auto mt-4">
+                                <div class="px-12 py-6 bg-gray-200 mb-4 rounded">
+                                    <div class="flex text-xl">
+                                        <i class="far fa-thumbs-up mr-2 text-blue-700"></i>
+                                        <h2 class="-mt-1 text-gray-700">Employment History</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-start mb-3 md:mb-0 md:p-3 md:pt-5 md:pb-5 md:pr-5 md:self-center">
+                                <img class="hidden md:block w-20 h-20 rounded shadow-2xl p-2" src="assets/images/company-logo-01.png" alt="">       
+                                <div class="px-0 md:px-3 flex flex-col justify-start">
+                                    <h2 class="text-xl text-gray-700">Doing things the right way</h2>
+                                    <h4 class="text-sm text-gray-600">Anonymous Employee</h4>
+
+                                    <div class="flex mt-2 gap-2 pb-3">
+                                        <div class="flex">
+                                            <span class="bg-yellow-400 px-2 rounded text-sm text-white">4.9</span>
+                                            
+                                            <div class="flex text-md text-yellow-400">
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="text-gray-600">
+                                            <a href="#"><i class="far mr-2 fa-clock"></i>2 days ago</a>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        Great company and especially ideal for the career-minded individual. The company is large enough to offer a variety of jobs in all kinds of interesting locations. Even if you never change roles, your job changes and evolves as the company grows, keeping things fresh.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-start mb-3 md:mb-0 md:p-3 md:pt-5 md:pb-5 md:pr-5 md:self-center">
+                                <img class="hidden md:block w-20 h-20 rounded shadow-2xl p-2" src="assets/images/company-logo-02.png" alt="">       
+                                <div class="px-0 md:px-3 flex flex-col justify-start">
+                                    <h2 class="text-xl text-gray-700">Doing things the right way</h2>
+                                    <h4 class="text-sm text-gray-600">Anonymous Employee</h4>
+
+                                    <div class="flex mt-2 gap-2 pb-3">
+                                        <div class="flex">
+                                            <span class="bg-yellow-400 px-2 rounded text-sm text-white">4.9</span>
+                                            
+                                            <div class="flex text-md text-yellow-400">
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="text-gray-600">
+                                            <a href="#"><i class="far mr-2 fa-clock"></i>2 days ago</a>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        Great company and especially ideal for the career-minded individual. The company is large enough to offer a variety of jobs in all kinds of interesting locations. Even if you never change roles, your job changes and evolves as the company grows, keeping things fresh.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-start mb-3 md:mb-0 md:p-3 md:pt-5 md:pb-5 md:pr-5 md:self-center">
+                                <img class="hidden md:block w-20 h-20 rounded shadow-2xl p-2" src="assets/images/company-logo-03.png" alt="">       
+                                <div class="px-0 md:px-3 flex flex-col justify-start">
+                                    <h2 class="text-xl text-gray-700">Doing things the right way</h2>
+                                    <h4 class="text-sm text-gray-600">Anonymous Employee</h4>
+
+                                    <div class="flex mt-2 gap-2 pb-3">
+                                        <div class="flex">
+                                            <span class="bg-yellow-400 px-2 rounded text-sm text-white">4.9</span>
+                                            
+                                            <div class="flex text-md text-yellow-400">
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="text-gray-600">
+                                            <a href="#"><i class="far mr-2 fa-clock"></i>2 days ago</a>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        Great company and especially ideal for the career-minded individual. The company is large enough to offer a variety of jobs in all kinds of interesting locations. Even if you never change roles, your job changes and evolves as the company grows, keeping things fresh.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="flex flex-col col-span-2 p-4 md:p-0">
+                    <div class="flex justify-between space-x-2 flex-wrap content-center mt-12">
+                        <div class="flex xl:flex-col">
+                            <span class="text-2xl text-gray-700">636</span>
+                            <h4 class="text-gray-500">Job Posted</h4>
+                        </div>
+
+                        <div class="flex flex-col border-l pl-2">
+                            <span class="text-2xl text-gray-700">1,421</span>
+                            <h4 class="text-gray-500">Task Posted</h4>
+                        </div>
+
+                        <div class="flex flex-col border-l pl-2">
+                            <span class="text-2xl text-gray-700">493</span>
+                            <h4 class="text-gray-500">Freelancers</h4>
+                        </div>
+                    </div>
+
+                    <a href="#" class="group block bg-blue-700 rounded text-center py-3 mt-3 text-white transform hover:-translate-y-1 shadow-lg duration-300 transition">Make and Offer &rarr;</a>
+
+                    <div class="my-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="">
+                                <h3 class="text-gray-800">88%</h3>
+                                <div class="relative pt-1">
+                                    <div class="overflow-hidden h-1 my-2 text-xs flex rounded bg-gray-300">
+                                      <div style="width:40%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-700"></div>
+                                    </div>
+                                </div>
+                                <h3 class="text-gray-500">Job Success</h3>
+                            </div>
+
+                            <div class="">
+                                <h3 class="text-gray-800">100%</h3>
+                                <div class="relative pt-1">
+                                    <div class="overflow-hidden h-1 my-2 text-xs flex rounded bg-gray-300">
+                                      <div style="width: 100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-700"></div>
+                                    </div>
+                                </div>
+                                <h3 class="text-gray-500">Recommendation</h3>
+                            </div>
+
+                            <div class="">
+                                <h3 class="text-gray-800">90%</h3>
+                                <div class="relative pt-1">
+                                    <div class="overflow-hidden h-1 my-2 text-xs flex rounded bg-gray-300">
+                                      <div style="width: 90%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-700"></div>
+                                    </div>
+                                </div>
+                                <h3 class="text-gray-500">On Time</h3>
+                            </div>
+
+                            <div class="">
+                                <h3 class="text-gray-800">80%</h3>
+                                <div class="relative pt-1">
+                                    <div class="overflow-hidden h-1 my-2 text-xs flex rounded bg-gray-300">
+                                      <div style="width: 80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-700"></div>
+                                    </div>
+                                </div>
+                                <h3 class="text-gray-500">On Budget</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="text-xl text-gray-700 mt-3">Social Profile</h1>
+                    <div class="flex mt-2 text-gray-400 text-2xl">
+                        <a href="" class="py-1 px-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="" class="py-1 px-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="" class="py-1 px-2">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+
+                        <a href="" class="py-1 px-2">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                    <h1 class="mt-3 text-xl text-gray-700 pb-3">Skills</h1>
+                    <div class="space-y-1">
+                        <button class="w-max bg-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">html</button>
+                        <button class="w-max bg-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">front-end-dev</button>
+                        <button class="w-max bg-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">wordpress</button>
+                        <button class="w-max bg-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">react</button>
+                        <button class="w-max bg-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">vue</button>
+                        <button class="w-max bg-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">laravel</button>
+                        <button class="w-max bg-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">angular</button>
+                        <button class="w-max bg-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">php</button>
+                        <button class="w-max bg-gray-200 text-blue-700 px-4 py-2 rounded hover:bg-gray-300 transition duration-500">angular</button>
+                    </div>
+
+                    <h1 class="mt-3 text-xl text-gray-700">Attachments</h1>
+                    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="group px-4 py-2 bg-gray-100 hover:bg-blue-700 rounded transition duration-200 cursor-pointer shadow-lg">
+                            <h2 class="text-gray-700 text-lg pb-1 group-hover:text-gray-100">Cover Letter</h2>
+                            <span class="text-gray-500 group-hover:text-gray-300 text-sm">PDF</span>
+                        </div>
+
+                        <div class="group px-4 py-2 bg-gray-100 hover:bg-blue-700 rounded transition duration-200 cursor-pointer shadow-lg">
+                            <h2 class="text-gray-700 text-lg pb-1 group-hover:text-gray-100">Contract</h2>
+                            <span class="text-sm text-gray-500 group-hover:text-gray-300">DOCX</span>
+                        </div>
+
+                        <div class="group px-4 py-2 bg-gray-100 hover:bg-blue-700 rounded transition duration-200 cursor-pointer shadow-lg">
+                            <h2 class="text-gray-700 text-lg pb-1 group-hover:text-gray-100">CV</h2>
+                            <span class="text-sm text-gray-500 group-hover:text-gray-300">DOCX</span>
+                        </div>
+                    </div>
+
+                    <h1 class="text-2xl text-gray-700 mb-4 mt-6">Bookmark or Share</h1>
+
+                    <button class="flex align-middle text-white text-lg">
+                        <i class="fas fa-star px-2 py-3 rounded-l bg-gray-600 self-center"></i>
+                        <span class="px-2 py-1 rounded-r bg-gray-700">Bookmark</span>
+                    </button>
+                    
+                    <form action="" class="mt-5">
+                        <div class="flex flex-row">
+                            <input class="w-full border outline-none py-3 px-3 rounded-l text-gray-700" type="email" value="http://127.0.0.1:5500/single.html" readonly>
+
+                            <button class="bg-blue-700 rounded-r px-5 text-white transition" type="copy"><i class="far fa-copy"></i></button>
+                        </div>
+                    </form>
+
+                    <div class="flex mt-6 space-x-3">
+                        <i class="fas fa-share-alt py-3 px-4 bg-gray-100 rounded"></i>
+                        <h2 class="self-center text-lg text-gray-600">Interesting? <a href="" class="text-blue-600">Share It!</a></h2>
+                    </div>
+
+                    <div class="flex mt-6 text-white">
+                        <a href="" class="py-2 px-4 bg-blue-800 rounded-l">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="" class="py-2 px-4 bg-blue-500">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="" class="py-2 px-4 bg-red-600">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+
+                        <a href="" class="py-2 px-4 bg-blue-600 rounded-r">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="px-6 md:px-12 py-6 shadow-sm filter drop-shadow-lg sticky top-0 border-b border-gray-700">
+            <div class="container mx-auto">
+                <div class="flex justify-between">
+                    <div class="flex flex-start space-x-6 divide-x ">
+                        <!-- Brand Logo -->
+                        <h1 class="text-xl sm:text-2xl text-white">Mamurjor</h1>
+                    </div>
+        
+                    <!-- Header Right Side Widgets -->
+                    <div class="flex space-x-6 flex-wrap content-center">
+                        <div class="flex text-white space-x-4 flex-wrap content-center border-gray-600 border-l pl-4">
+                            <i class="far fa-bell"></i>
+                            <i class="far fa-envelope"></i>
+                        </div>
+        
+                        <div class="border-l border-gray-600 pl-4">
+                            <select name="" id="" class="bg-gray-700 rounded border-none px-2 py-1 text-sm md:text-base text-white">
+                                <option>English</option>
+                                <option value="bengali">Bengali</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6">
+            <div class="py-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">For Candidates</h5>
+                        <hr width="70">
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="#">Add Resume</a></li>
+                            <li><a href="#">Job Alerts</a></li>
+                            <li><a href="#">My Bookmarks</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">For Employers</h5>
+                        <hr width="70">
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Browse Candidates</a></li>
+                            <li><a href="#">Post a Job</a></li>
+                            <li><a href="#">Post a Task</a></li>
+                            <li><a href="#">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-span-1">
+                        <h5 class="text-gray-100 text-lg">Useful Links</h5>
+                        <hr width="70">
+                        <ul class="mt-3 space-y-1 text-gray-300">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">My Account</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <h5 class="text-gray-100 text-lg"><i class="far mr-2 fa-envelope"></i>Sign Up For a Newsletter</h5>
+                        <hr width="70">
+                        <p class="py-3 text-gray-400">
+                            Weekly breaking news, analysis and cutting edge<br>advices on job searching.
+                        </p>
+
+                        <form action="">
+                            <div class="flex flex-row">
+                                <input class="w-full outline-none py-3 pl-3 rounded bg-gray-900 text-gray-100" type="email" placeholder="Enter your email address">
+                                <button class="bg-blue-700 hover:bg-white ml-1 rounded px-5 text-white hover:text-black transition" type="submit"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-12 py-6 shadow-sm filter drop-shadow-lg sticky top-0 z-50 border-t border-gray-700">
+            <div class="container mx-auto text-center text-gray-300">
+                <p>
+                    Copyright @ <a href="#" class="font-semibold text-gray-100 hover:underline">Mamurjor IT</a> | Designed & Developed by - Mamurjor Team
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
