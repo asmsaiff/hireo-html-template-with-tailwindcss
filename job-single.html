@@ -20,7 +20,12 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section Start -->
@@ -34,12 +39,25 @@
                 <nav class="self-center">
                     <ul class="flex space-x-4 text-gray-600 ml-6">
                         <li><a href="/">Home</a></li>
-                        <li><a href="#">Find Work</a></li>
-                        <li><a href="#">For Employers</a></li>
-                        <li><a href="#">Training</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Blog</a></li>
+
+                        <li class="dropdown inline-block relative">
+                            <button class="inline-flex items-center">
+                              <span class="mr-1">Find Work</span>
+                              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                            </button>
+                            
+                            <ul class="dropdown-menu absolute hidden bg-gray-800 text-gray-50 pt-5 w-64 rounded py-3">
+                              <li class=""><a class="text-gray-400 hover:text-gray-50 transition duration-300 -mt-5 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                              <li class=""><a class="text-gray-400 hover:text-gray-50 transition duration-300 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+                              <li class=""><a class="text-gray-400 hover:text-gray-50 transition duration-300 py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="employer-profile.html">For Employers</a></li>
+                        <li><a href="course.html">Training</a></li>
+                        <li><a href="single.html">About Us</a></li>
+                        <li><a href="single.html">Contact Us</a></li>
+                        <li><a href="course.html">Blog</a></li>
                     </ul>
                 </nav>
             </div>
@@ -47,12 +65,21 @@
             <!-- Header Right Side Widgets -->
             <div class="flex space-x-6 flex-wrap content-center">
                 <div class="flex space-x-4 flex-wrap content-center border-l pl-4">
-                    <i class="far fa-bell"></i>
-                    <i class="far fa-envelope"></i>
+                    <div class="relative">
+                        <i class="far fa-bell"></i>
+                        <span class="absolute bg-blue-800 text-xs text-white px-1 rounded-full -mt-1 -ml-2">4</span>
+                    </div>
+                    <div class="relative">
+                        <i class="far fa-envelope"></i>
+                        <span class="absolute bg-blue-800 text-xs text-white px-1 rounded-full -mt-1 -ml-2">3</span>
+                    </div>
                 </div>
 
                 <div class="border-l pl-4">
-                    <img class="w-8 bg-gray-200 rounded-full" src="assets/images/profile.png" alt="">
+                    <div class="relative">
+                        <img class="w-10 bg-gray-200 rounded-full" src="assets/images/profile.png" alt="">
+                        <span class="w-3 h-3 absolute bg-green-500 text-xs text-white px-1 rounded-full ml-7 -mt-3 shadow-2xl"></span>
+                    </div>
                 </div>
             </div>
         </div>
