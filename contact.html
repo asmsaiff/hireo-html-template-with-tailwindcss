@@ -112,72 +112,73 @@
             <div class="md:pr-10 flex flex-wrap content-center justify-between flex-col md:flex-row pb-5 md:pb-0">
                 <div class="flex justify-start md:p-3 md:pt-5 md:pb-5 md:pr-5">
                     <div class="px-0 md:px-3 flex flex-col">
-                        <h2 class="text-3xl pt-1 pb-3 text-gray-700">Sign Up</h2>
+                        <h2 class="text-3xl pt-1 pb-3 text-gray-700">Contact Us</h2>
                     </div>
                 </div>
 
                 <div class="breadcrumb flex w-max md:self-center bg-gray-800 text-gray-200 px-3 py-2 rounded text-sm md:text-base">
                     <a href="#">Home</a>
-                    <a href="#">Sign Up</a>
+                    <a href="#">Contact Us</a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="py-16">
+        <div class="container mx-auto mb-6">
+            <div class="border">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="py-16 px-12">
+                        <h2 class="text-xl font-semibold mb-2">Our Office</h2>
+                        <hr style="width: 50px; height: 2px;" class="bg-blue-800">
+
+                        <p class="text-lg text-gray-700 mt-3">
+                            Mamurjor Solution Ltd.<br>
+                            astha vaban(4th floor), mirpur-10, Dhaka<br>
+                            01746686868<br>
+                            mamurjor@mail.com
+                        </p>
+                    </div>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7300.724543662074!2d90.36765194460807!3d23.805713491003385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1622521251930!5m2!1sen!2sbd" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
         <div class="container mx-auto">
-            <div class="grid px-4">
-                <div class="justify-self-center">
-                    <h1 class="text-2xl text-center text-gray-700">Let's create your account!</h1>
-                    <h3 class="text-lg text-center text-gray-500">Already have an account?<a class="text-blue-700 text-semibold" href="login.html"> Login</a></h3>
+            <div class="grid grid-cols-1 px-4">
+                <div class="justify-self-center w-9/12">
+                    <h1 class="text-2xl text-gray-700">Any questions? Feel free to contact us!</h1>
 
                     <form action="" class="mt-12">
                         <div class="grid md:grid-cols-1 gap-6 md:gap-6 w-full mb-4">
-                            <div class="grid grid-cols-2 gap-4">
-                                <button onclick="" class="bg-green-600 text-white py-2 rounded-sm transition duration-200"><i class="fas fa-user mr-2"></i>Freelancer</button>
-                                <button onclick="" class="bg-gray-100 hover:bg-green-50 text-gray-500 hover:text-green-600 py-2 rounded-sm transition duration-200"><i class="fas fa-user-tie mr-2"></i>Employer</button>
-                            </div>
-                            <div class="flex flex-col">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="flex flex-row space-x-3 border rounded bg-white">
+                                    <i class="far fa-user self-center bg-gray-100 text-gray-400 p-3"></i>
+                                    <input class="w-full outline-none text-lg" type="text" placeholder="Your Name">
+                                </div>
+
                                 <div class="flex flex-row space-x-3 border rounded bg-white">
                                     <i class="far fa-envelope self-center bg-gray-100 text-gray-400 p-3"></i>
-                                    <input class="w-full outline-none text-lg" type="text" placeholder="Username or Email">
+                                    <input class="w-full outline-none text-lg" type="email" placeholder="Your Email">
                                 </div>
                             </div>
     
                             <div class="flex flex-col">
                                 <div class="flex flex-row border md:border-r border-t border-b rounded md:rounded-l bg-white">
-                                    <i class="fas fa-lock self-center bg-gray-100 p-3 text-gray-400"></i>
-                                    <input class="w-full outline-none pl-3 text-lg" type="password" placeholder="Password">
+                                    <i class="far fa-file-alt bg-gray-100 p-3 text-gray-400"></i>
+                                    <input class="w-full outline-none pl-3 text-lg" type="text" placeholder="Subject">
                                 </div>
                             </div>
 
                             <div class="flex flex-col">
                                 <div class="flex flex-row border md:border-r border-t border-b rounded md:rounded-l bg-white">
-                                    <i class="fas fa-lock self-center bg-gray-100 p-3 text-gray-400"></i>
-                                    <input class="w-full outline-none pl-3 text-lg" type="password" placeholder="Repeat Password">
+                                    <textarea name="" id="" cols="30" rows="5" class="w-full outline-none p-4" placeholder="Your Message"></textarea>
                                 </div>
                             </div>
                         </div>
 
-                        <button class="w-full bg-blue-700 mt-3 rounded py-2 px-6 text-white transform hover:-translate-y-1 transition duration-300" type="submit">Sign Up</button>
+                        <button class="bg-blue-700 mt-3 rounded py-2 px-6 text-white transform hover:-translate-y-1 transition duration-300" type="submit">Submit Message</button>
                     </form>
-
-                    <div class="flex my-4">
-                        <span style="height: 1px;" class="bg-gray-300 w-full self-center"></span>
-                        <span class="mx-3 text-gray-500">Or</span>
-                        <span style="height: 1px;" class="bg-gray-300 w-full self-center"></span>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="flex space-x-4 border border-blue-900 px-6 py-2 rounded hover:bg-blue-900 text-blue-900 hover:text-white cursor-pointer text-sm transition duration-300 transform hover:-translate-y-1">
-                            <i class="fab fa-facebook-f self-center"></i>
-                            <h5>Register via Facebook</h5>
-                        </div>
-                        <div class="flex space-x-4 border border-red-600 px-6 py-2 rounded hover:bg-red-600 text-red-600 hover:text-white cursor-pointer text-sm transition duration-300 transform hover:-translate-y-1">
-                            <i class="fab fa-google-plus-g self-center"></i>
-                            <h5>Register via Google+</h5>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
