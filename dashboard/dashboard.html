@@ -150,11 +150,11 @@
             </div>
         </div>
         <div class="col-span-5 bg-gray-50">
-            <!-- Single Page Header -->
+            <!-- Page Header -->
             <div class="py-3 md:py-4 px-4 md:px-0">
                 <div class="mx-auto">
-                    <div class="md:pr-10 flex flex-wrap content-center justify-between flex-col md:flex-row pb-5 md:pb-0">
-                        <div class="flex justify-start md:p-3 md:pt-5 md:pb-5 md:pr-5">
+                    <div class="md:pr-10 flex flex-wrap content-center justify-between flex-col md:flex-row pb-4 md:pb-0">
+                        <div class="flex justify-start md:p-3 md:pt-5 md:pb-1 md:pr-5">
                             <div class="px-0 md:px-3 flex flex-col">
                                 <h2 class="text-3xl pt-1 pb-1 text-gray-700">Howdy, Tom!</h2>
 
@@ -174,40 +174,252 @@
 
             <div class="mt-4 mx-6">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
-                    <div class="flex justify-between py-6 px-4 bg-white shadow-2xl">
+                    <div class="flex justify-between py-6 px-4 bg-white shadow-xl">
                         <div class="self-center">
-                            <h3 class="text-xl text-gray-600">Task Bid Won</h3>
-                            <h1 class="text-4xl font-bold text-gray-700">22</h1>
+                            <h3 class="text-gray-500">Task Bid Won</h3>
+                            <h1 class="text-4xl text-gray-600">22</h1>
                         </div>
 
-                        <i class="fas fa-gavel self-center bg-green-100 text-4xl p-6 rounded-lg"></i>
+                        <i class="fas fa-gavel self-center bg-green-100 text-4xl p-6 rounded-lg text-green-500"></i>
                     </div>
 
-                    <div class="flex justify-between py-6 px-4 bg-white shadow-2xl">
+                    <div class="flex justify-between py-6 px-4 bg-white shadow-xl">
                         <div class="self-center">
-                            <h3 class="text-xl text-gray-600">Task Bid Won</h3>
-                            <h1 class="text-4xl font-bold text-gray-700">22</h1>
+                            <h3 class="text-gray-600">Jobs Applied</h3>
+                            <h1 class="text-4xl text-gray-700">4</h1>
                         </div>
 
-                        <i class="fas fa-gavel self-center bg-green-100 text-4xl p-6 rounded-lg"></i>
+                        <i class="fas fa-briefcase self-center bg-red-50 text-red-700 text-4xl p-6 rounded-lg"></i>
                     </div>
 
-                    <div class="flex justify-between py-6 px-4 bg-white shadow-2xl">
+                    <div class="flex justify-between py-6 px-4 bg-white shadow-xl">
                         <div class="self-center">
-                            <h3 class="text-xl text-gray-600">Task Bid Won</h3>
-                            <h1 class="text-4xl font-bold text-gray-700">22</h1>
+                            <h3 class="text-gray-600">Reviews</h3>
+                            <h1 class="text-4xl text-gray-700">28</h1>
                         </div>
 
-                        <i class="fas fa-gavel self-center bg-green-100 text-4xl p-6 rounded-lg"></i>
+                        <i class="far fa-comment-dots self-center bg-yellow-100 text-yellow-600 bg-opacity-70 text-4xl p-6 rounded-lg"></i>
                     </div>
 
-                    <div class="flex justify-between py-6 px-4 bg-white shadow-2xl">
+                    <div class="flex justify-between py-6 px-4 bg-white shadow-xl">
                         <div class="self-center">
-                            <h3 class="text-xl text-gray-600">Task Bid Won</h3>
-                            <h1 class="text-4xl font-bold text-gray-700">22</h1>
+                            <h3 class="text-gray-600">This Month Views</h3>
+                            <h1 class="text-4xl text-gray-700">987</h1>
                         </div>
 
-                        <i class="fas fa-gavel self-center bg-green-100 text-4xl p-6 rounded-lg"></i>
+                        <i class="fas fa-chart-line self-center bg-green-100 text-4xl p-6 rounded-lg text-blue-700"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-12 mt-12 px-6">
+                <div class="col-span-2 bg-white py-2 px-6 rounded-t">
+                    <div class="flex justify-between border-b">
+                        <div class="flex">
+                            <i class="fas fa-chart-line self-center mr-3 text-blue-500"></i>
+                            <h4 class="mt-3 text-sm">Your Profile Views</h4>
+                        </div>
+                        <div class="relative text-sm">
+                            <select class="block appearance-none w-full bg-transparent text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none" id="grid-state">
+                              <option>New Mexico</option>
+                              <option>Missouri</option>
+                              <option>Texas</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                            </div>
+                          </div>
+                    </div>
+
+                    <img src="../assets/images/chart.png" class="" alt="">
+                </div>
+                <div class="bg-white py-2 rounded-t">
+                    <div class="flex justify-between border-b py-3 px-6">
+                        <div class="flex">
+                            <i class="fas fa-notes-medical self-center mr-3 text-blue-500"></i>
+                            <h4 class="text-sm">Notes</h4>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="h-96 overflow-y-scroll px-6">
+                            <div class="p-6 rounded shadow my-3">
+                                <p class="text-gray-500 text-sm">Meeting with candidate at 3pm who applied for Bilingual Event Support Specialist</p>
+    
+                                <div class="flex justify-between mt-6">
+                                    <a href="#!" class="text-sm bg-red-700 text-white rounded px-3 py-1">High Priority</a>
+    
+                                    <div class="flex space-x-3 text-sm text-gray-500">
+                                        <i class="fas fa-edit"></i>
+                                        <i class="far fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="p-6 rounded shadow my-3">
+                                <p class="text-gray-500 text-sm">Extend premium plan for next month</p>
+    
+                                <div class="flex justify-between mt-6">
+                                    <a href="#!" class="text-sm bg-green-500 text-white rounded px-3 py-1">Low Priority</a>
+    
+                                    <div class="flex space-x-3 text-sm text-gray-500">
+                                        <i class="fas fa-edit"></i>
+                                        <i class="far fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="p-6 rounded shadow my-3">
+                                <p class="text-gray-500 text-sm">Send payment to David Peterson</p>
+    
+                                <div class="flex justify-between mt-6">
+                                    <a href="#!" class="text-sm bg-yellow-500 text-white rounded px-3 py-1">Medium Priority</a>
+    
+                                    <div class="flex space-x-3 text-sm text-gray-500">
+                                        <i class="fas fa-edit"></i>
+                                        <i class="far fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 rounded shadow my-3">
+                                <p class="text-gray-500 text-sm">Meeting with candidate at 3pm who applied for Bilingual Event Support Specialist</p>
+    
+                                <div class="flex justify-between mt-6">
+                                    <a href="#!" class="text-sm bg-red-700 text-white rounded px-3 py-1">High Priority</a>
+    
+                                    <div class="flex space-x-3 text-sm text-gray-500">
+                                        <i class="fas fa-edit"></i>
+                                        <i class="far fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#!" class="text-center block mt-6 bg-blue-600 text-white font-semibold py-2 rounded mx-6">Add Note</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-12 mt-12 px-6">
+                <div class="bg-white py-2 rounded-t">
+                    <div class="flex justify-between border-b px-6 py-2 text-gray-700">
+                        <div class="flex">
+                            <i class="far fa-bell self-center mr-3 text-blue-500 text-xl"></i>
+                            <h4 class="self-center">Notifications</h4>
+                        </div>
+
+                        <i class="far fa-check-square bg-gray-100 rounded p-2"></i>
+                    </div>
+
+                    <div class="group flex justify-between py-6 px-6 border-t border-b">
+                        <div class="flex justify-start space-x-4 text-gray-700">
+                            <i class="fas fa-user-friends bg-gray-100 rounded p-2 text-center"></i>
+                            <h2 class="self-center text-sm">Michael Shannah applied for a job Full Stack Software Engineer</h2>
+                        </div>
+
+                        <i class="far fa-check-square bg-blue-600 text-white hidden group-hover:block rounded p-2 cursor-pointer"></i>
+                    </div>
+
+                    <div class="group flex justify-between py-6 px-6 border-t border-b">
+                        <div class="flex justify-start space-x-4 text-gray-700">
+                            <i class="fas fa-user-friends bg-gray-100 rounded p-2 text-center"></i>
+                            <h2 class="self-center text-sm">Michael Shannah applied for a job Full Stack Software Engineer</h2>
+                        </div>
+
+                        <i class="far fa-check-square bg-blue-600 text-white hidden group-hover:block rounded p-2 cursor-pointer"></i>
+                    </div>
+
+                    <div class="group flex justify-between py-6 px-6 border-t border-b">
+                        <div class="flex justify-start space-x-4 text-gray-700">
+                            <i class="fas fa-user-friends bg-gray-100 rounded p-2 text-center"></i>
+                            <h2 class="self-center text-sm">Michael Shannah applied for a job Full Stack Software Engineer</h2>
+                        </div>
+
+                        <i class="far fa-check-square bg-blue-600 text-white hidden group-hover:block rounded p-2 cursor-pointer"></i>
+                    </div>
+
+                    <div class="group flex justify-between py-6 px-6 border-t border-b">
+                        <div class="flex justify-start space-x-4 text-gray-700">
+                            <i class="fas fa-user-friends bg-gray-100 rounded p-2 text-center"></i>
+                            <h2 class="self-center text-sm">Michael Shannah applied for a job Full Stack Software Engineer</h2>
+                        </div>
+
+                        <i class="far fa-check-square bg-blue-600 text-white hidden group-hover:block rounded p-2 cursor-pointer"></i>
+                    </div>
+
+                    <div class="group flex justify-between py-6 px-6 border-t border-b">
+                        <div class="flex justify-start space-x-4 text-gray-700">
+                            <i class="fas fa-user-friends bg-gray-100 rounded p-2 text-center"></i>
+                            <h2 class="self-center text-sm">Michael Shannah applied for a job Full Stack Software Engineer</h2>
+                        </div>
+
+                        <i class="far fa-check-square bg-blue-600 text-white hidden group-hover:block rounded p-2 cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="bg-white py-2 rounded-t">
+                    <div class="flex justify-between border-b py-3 px-6">
+                        <div class="flex">
+                            <i class="fas fa-clipboard-list self-center mr-3 text-blue-500 text-xl"></i>
+                            <h4 class="self-center">Orders</h4>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="group flex justify-between px-6 border-t border-b">
+                            <div class="flex flex-col py-6 text-gray-700">
+                                <h2 class="pb-2">Professional Plan</h2>
+
+                                <div class="flex space-x-4 text-sm divide-x">
+                                    <h4 class="bg-red-700 text-white rounded px-3 py-1">Unpaid</h4>
+                                    <h4 class="rounded px-3 py-1">Order: #326</h4>
+                                    <h4 class="rounded px-3 py-1">Date: 12/08/2019</h4>
+                                </div>
+                            </div>
+    
+                            <a href="#!" class="bg-blue-600 text-sm hover:bg-gray-700 text-white hidden group-hover:block rounded self-center py-2 px-2 cursor-pointer transition duration-300">Finish Payment</a>
+                        </div>
+
+                        <div class="group flex justify-between px-6 border-t border-b">
+                            <div class="flex flex-col py-6 text-gray-700">
+                                <h2 class="pb-2">Professional Plan</h2>
+
+                                <div class="flex space-x-4 text-sm divide-x">
+                                    <h4 class="bg-green-500 text-white rounded px-3 py-1">Paid</h4>
+                                    <h4 class="rounded px-3 py-1">Order: #326</h4>
+                                    <h4 class="rounded px-3 py-1">Date: 12/08/2019</h4>
+                                </div>
+                            </div>
+    
+                            <a href="#!" class="bg-gray-200 text-sm hover:bg-gray-700 text-black hidden group-hover:block hover:text-white rounded self-center py-2 px-2 cursor-pointer transition duration-300">Finish Payment</a>
+                        </div>
+
+                        <div class="group flex justify-between px-6 border-t border-b">
+                            <div class="flex flex-col py-6 text-gray-700">
+                                <h2 class="pb-2">Professional Plan</h2>
+
+                                <div class="flex space-x-4 text-sm divide-x">
+                                    <h4 class="bg-green-500 text-white rounded px-3 py-1">Paid</h4>
+                                    <h4 class="rounded px-3 py-1">Order: #326</h4>
+                                    <h4 class="rounded px-3 py-1">Date: 12/08/2019</h4>
+                                </div>
+                            </div>
+    
+                            <a href="#!" class="bg-gray-200 text-sm hover:bg-gray-700 text-black hidden group-hover:block hover:text-white rounded self-center py-2 px-2 cursor-pointer transition duration-300">Finish Payment</a>
+                        </div>
+                        <div class="group flex justify-between px-6 border-t border-b">
+                            <div class="flex flex-col py-6 text-gray-700">
+                                <h2 class="pb-2">Professional Plan</h2>
+
+                                <div class="flex space-x-4 text-sm divide-x">
+                                    <h4 class="bg-green-500 text-white rounded px-3 py-1">Paid</h4>
+                                    <h4 class="rounded px-3 py-1">Order: #326</h4>
+                                    <h4 class="rounded px-3 py-1">Date: 12/08/2019</h4>
+                                </div>
+                            </div>
+    
+                            <a href="#!" class="bg-gray-200 text-sm hover:bg-gray-700 text-black hidden group-hover:block hover:text-white rounded self-center py-2 px-2 cursor-pointer transition duration-300">Finish Payment</a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
