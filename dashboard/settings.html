@@ -151,7 +151,7 @@
         </div>
         <div class="col-span-5 bg-gray-50">
             <!-- Page Header -->
-            <div class="py-3 md:py-4 px-4 md:px-0">
+            <div class="py-3 md:py-4 px-4 md:px-6">
                 <div class="mx-auto">
                     <div class="md:pr-10 flex flex-wrap content-center justify-between flex-col md:flex-row pb-4 md:pb-0">
                         <div class="flex justify-start md:p-3 md:pt-5 md:pb-1 md:pr-5">
@@ -187,24 +187,24 @@
 
                             <div class="grid grid-cols-2 col-span-5 gap-12 w-full">
                                 <div>
-                                    <h2 class="mb-2 text-sm text-gray-700">First Name</h2>
-                                    <input type="text" readonly value="John " class="border w-full block text-gray-600 px-3 py-2 rounded text-sm">
+                                    <h2 class="mb-2 text-gray-700">First Name</h2>
+                                    <input type="text" readonly value="John " class="border w-full block text-gray-600 px-4 py-2 rounded">
                                 </div>
                                 <div>
-                                    <h2 class="mb-2 text-sm text-gray-700">Last Name</h2>
-                                    <input type="text" value=" Doe" readonly class="border w-full block text-gray-600 px-3 py-2 rounded text-sm">
+                                    <h2 class="mb-2 text-gray-700">Last Name</h2>
+                                    <input type="text" value=" Doe" readonly class="border w-full block text-gray-600 px-4 py-2 rounded">
                                 </div>
 
                                 <div>
-                                    <h2 class="mb-2 text-sm text-gray-700">Account Type</h2>
-                                    <div class="grid grid-cols-2 gap-12">
-                                        <button class="bg-green-600 text-white py-2 rounded text-sm"><i class="far fa-user-circle mr-2"></i> Freelancer</button>
-                                        <button class="bg-gray-200 text-gray-500 py-2 rounded text-sm"><i class="fas fa-briefcase mr-2"></i> Employer</button>
+                                    <h2 class="mb-2 text-gray-700">Account Type</h2>
+                                    <div class="grid grid-cols-2 gap-6">
+                                        <button class="bg-green-600 text-white py-3 rounded text-sm"><i class="far fa-user-circle mr-2"></i> Freelancer</button>
+                                        <button class="bg-gray-200 text-gray-500 py-3 rounded text-sm"><i class="fas fa-briefcase mr-2"></i> Employer</button>
                                     </div>
                                 </div>
                                 <div>
-                                    <h2 class="mb-2 text-sm text-gray-700">Last Name</h2>
-                                    <input type="email" value="johndoe@email.com" readonly class="border w-full block text-gray-600 px-3 py-2 rounded text-sm">
+                                    <h2 class="mb-2 text-gray-700">Last Name</h2>
+                                    <input type="email" value="johndoe@email.com" readonly class="border w-full block text-gray-600 px-4 py-2 rounded">
                                 </div>
                             </div>
                         </div>
@@ -231,7 +231,7 @@
                                 <h2 class="mb-1">Skills <i class="fas fa-info-circle ml- cursor-help"></i></h2>
                                 
                                 <div class="flex justify-end relative">
-                                    <input type="text" class="border w-full rounded px-3 py-2">
+                                    <input type="text" placeholder="e.g React JS, Laravel" class="border w-full rounded px-3 py-2">
                                     <button class="absolute self-center bg-blue-600 mr-2 px-3 py-1 rounded text-white"><i class="fas fa-plus"></i></button>
                                 </div>
 
@@ -248,7 +248,7 @@
                                 
                                 <div class="grid grid-flow-col grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                                     <div class="group p-4 bg-gray-100 rounded transition duration-200 shadow-lg">
-                                        <h2 class="text-gray-700 text-lg pb-3">Project Brief</h2>
+                                        <h2 class="text-gray-700 pb-1">Project Brief</h2>
                                         <div class="flex justify-between">
                                             <span class="text-gray-500 text-sm">PDF</span>
                                             <i class="far fa-trash-alt bg-red-600 self-center hidden group-hover:block -mt-3 transition duration-300 text-white rounded px-2 py-1 cursor-pointer text-sm"></i>
@@ -256,7 +256,7 @@
                                     </div>
 
                                     <div class="group p-4 bg-gray-100 rounded transition duration-200 shadow-lg">
-                                        <h2 class="text-gray-700 text-lg pb-3">Project Brief</h2>
+                                        <h2 class="text-gray-700 pb-1">Project Brief</h2>
                                         <div class="flex justify-between">
                                             <span class="text-gray-500 text-sm">PDF</span>
                                             <i class="far fa-trash-alt bg-red-600 self-center hidden group-hover:block -mt-3 transition duration-300 text-white rounded px-2 py-1 cursor-pointer text-sm"></i>
@@ -273,20 +273,74 @@
                 <div class="border-t mx-12 pb-12 bg-white">
                     <div class="grid grid-cols-2 col-span-5 gap-12 w-full mt-8 px-6">
                         <div>
-                            <h2 class="mb-2 text-sm text-gray-700">Tagline</h2>
-                            <input type="text" readonly value="John " class="border w-full block text-gray-600 px-3 py-2 rounded text-sm">
+                            <h2 class="mb-2 text-gray-700">Tagline</h2>
+                            <input type="text" readonly value="iOS Expert + Node Dev" class="border w-full block text-gray-600 px-4 py-2 rounded">
                         </div>
                         <div>
-                            <h2 class="mb-2 text-sm text-gray-700">Nationality</h2>
-                            <input type="text" value=" Doe" readonly class="border w-full block text-gray-600 px-3 py-2 rounded text-sm">
+                            <h2 class="mb-2 text-gray-700">Nationality</h2>
+                            <div class="w-full mb-6 md:mb-0">
+                                <div class="relative">
+                                    <select class="block appearance-none w-full bg-white border text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none" id="grid-state">
+                                        <option>New Mexico</option>
+                                        <option>Missouri</option>
+                                        <option>Texas</option>
+                                    </select>
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                        <svg class="fill-current h-4 w-4"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="px-6">
+                        <h2 class="mb-2 text-gray-700 mt-3">Introduce Yourself</h2>
+                        <textarea class="w-full p-4 border rounded" name="" id="" placeholder="Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment." rows="5"></textarea>
+                    </div>
                 </div>
+
+                <div class="mt-12 mx-12 bg-white py-2 rounded-t">
+                    <div class="flex justify-between border-b py-4 text-gray-700">
+                        <div class="flex ml-12">
+                            <i class="far fa-smile self-center mr-3 text-blue-500 text-xl"></i>
+                            <h4 class="self-center">Password & Security</h4>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 mx-12 pb-3">
+                        <div class="grid grid-cols-3 gap-12 my-4">
+                            <div>
+                                <h2 class="mb-2 text-gray-700">Current Password</h2>
+                                <input type="password" readonly class="border w-full block text-gray-600 px-4 py-2 rounded">
+                            </div>
+
+                            <div>
+                                <h2 class="mb-2 text-gray-700">New Password</h2>
+                                <input type="password" readonly class="border w-full block text-gray-600 px-4 py-2 rounded">
+                            </div>
+
+                            <div>
+                                <h2 class="mb-2 text-gray-700">Old Password</h2>
+                                <input type="password" readonly class="border w-full block text-gray-600 px-4 py-2 rounded">
+                            </div>
+                        </div>
+
+                        <label class="flex">
+                            <input type="checkbox" class="mr-3">
+                            <h3>Enable Two-Step Verification via Email</h3>
+                        </label>
+                    </div>
+                </div>
+
+                <input type="submit" value="Save Changes" class="ml-12 mt-6 text-lg bg-blue-700 text-white rounded px-4 py-2">
             </form>
 
             <footer class="py-6 px-6 mt-12 border-t">
                 <div class="flex justify-between">
-                    <p class="text-sm text-gray-500">© 2019 Hireo. All Rights Reserved. </p>
+                    <p class="text-sm text-gray-500">© 2019 Mamurjor. All Rights Reserved. </p>
                     <div class="flex space-x-5 text-xl text-gray-600 transition duration-200">
                         <a href=""><i class="fab fa-facebook-f hover:text-gray-800 transition duration-200 cursor-pointer"></i></a>
                         <a href=""><i class="fab fa-twitter hover:text-gray-800 transition duration-200 cursor-pointer"></i></a>
