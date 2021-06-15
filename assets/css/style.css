@@ -330,7 +330,7 @@ button {
 
 button:focus {
   outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 5px auto -webkit-focus-ring-color;sss
 }
 
 fieldset {
@@ -367,7 +367,6 @@ html {
  */
 
 body {
-  font-family: inherit;
   line-height: inherit;
 }
 
