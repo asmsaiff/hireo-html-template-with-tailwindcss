@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamurjor</title>
+
+    <base href="dashboard.html"> 
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .breadcrumb  a::after{
+            content: "";
+            display: inline-block;
+            height: 0;
+            width: 0;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid #aaa;
+            font-size: 14px;
+            margin-right: 12px;
+            margin-left: 10px;
+        }
+        .breadcrumb  a:last-child:after{
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="w-72">
+            <div class="hidden sm:block border-r h-screen shadow-l">
+            <div class="mt-6">
+                <h6 class="pl-6 pt-6 pb-1 text-blue-700 text-sm">Start</h6>
+
+                <a href="#!" class="flex border-l-4 border-blue-600 pl-6 py-2 text-blue-700 bg-gray-100 bg-opacity-80">
+                    <i class="fas fa-th-large self-center mr-3"></i>
+                    <h4 class="font-thin">Dashboard</h4>
+                </a>
+
+                <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                    <i class="far fa-comments self-center mr-3"></i>
+                    <h4 class="font-thin">Message</h4>
+                </a>
+
+                <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                    <i class="far fa-star self-center mr-3"></i>
+                    <h4 class="font-thin">Bookmark</h4>
+                </a>
+
+                <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                    <i class="far fa-comment-dots self-center mr-3"></i>
+                    <h4 class="font-thin">Review</h4>
+                </a>
+
+                <h6 class="pl-6 pt-6 pb-1 text-blue-700 text-sm">Organize & Manage</h6>
+
+                <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                    <i class="fas fa-briefcase self-center mr-3"></i>
+                    <h4 class="font-thin">Jobs</h4>
+                </a>
+
+                <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                    <i class="fas fa-stream self-center mr-3"></i>
+                    <h4 class="font-thin">Tasks</h4>
+                </a>
+
+                <h6 class="pl-6 pt-6 pb-1 text-blue-700 text-sm">Account</h6>
+
+                <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                    <i class="fas fa-cogs self-center mr-3"></i>
+                    <h4 class="font-thin">Settings</h4>
+                </a>
+
+                <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                    <i class="fas fa-power-off self-center mr-3"></i>
+                    <h4 class="font-thin">Logout</h4>
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="w-10/12">
+            
+            <footer class="py-6 px-6 mt-12 border-t">
+                <div class="flex justify-between">
+                    <p class="text-sm text-gray-500">© 2019 Mamurjor. All Rights Reserved. </p>
+                    <div class="flex space-x-5 text-xl text-gray-600 transition duration-200">
+                        <a href=""><i class="fab fa-facebook-f hover:text-gray-800 transition duration-200 cursor-pointer"></i></a>
+                        <a href=""><i class="fab fa-twitter hover:text-gray-800 transition duration-200 cursor-pointer"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g hover:text-gray-800 transition duration-200 cursor-pointer"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in hover:text-gray-800 transition duration-200 cursor-pointer"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
