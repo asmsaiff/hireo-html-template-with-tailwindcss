@@ -142,6 +142,7 @@
                             <div class="breadcrumb flex w-max md:self-center bg-gray-800 text-gray-200 px-3 py-2 rounded text-sm">
                                 <a href="#">Home</a>
                                 <a href="#">Dashboard</a>
+                                <a href="#">Post a job</a>
                             </div>
                         </div>
                     </div>
@@ -150,92 +151,91 @@
                 <div class="mx-12 mt-8 bg-white">
                     <div class="flex justify-between border-b py-4 text-gray-700">
                         <div class="flex ml-6">
-                            <i class="fas fa-briefcase self-center mr-3 text-blue-500 text-xl"></i>
-                            <h4 class="self-center">My Job Listings</h4>
+                            <i class="fab fa-wpforms self-center mr-3 text-blue-500 text-xl"></i>
+                            <h4 class="self-center">Job Submission Form</h4>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-col gap-4 sm:gap-0 shadow-lg mx-4 md:mx-0">
-                        <div class="md:pr-10 flex flex-wrap content-center justify-between bg-white flex-col md:flex-row pb-5 md:pb-0 border-b">
-                            <div class="flex justify-start p-3 md:p-5">
-                                <div class="px-0 md:px-3 flex flex-col">
-                                    <h2 class="text-lg pt-2 pb-1 font-semibold text-gray-700">Frontend React Developer <span class="text-sm bg-green-100 text-green-500 px-2 rounded py-1">Pending Approval</span></h2>
-                                    
-                                    <div class="flex space-x-6">
-                                        <div class="flex text-gray-500">
-                                            <i class="far fa-calendar-alt self-center mr-3"></i>
-                                            <span class="self-center">Posted on 10 July, 2019</span>
-                                        </div>
-                                        <div class="flex text-gray-500">
-                                            <i class="far fa-calendar-alt self-center mr-3"></i>
-                                            <span class="self-center">Expiring on 10 August, 2019</span>
+                    <form action="" method="" class="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-col gap-4 sm:gap-0 shadow-lg mx-4 md:mx-0 pb-6 px-12 py-6">
+                        <div class="flex space-x-6">
+                            <div class="grid grid-cols-3 col-span-5 gap-6 w-full">
+                                <div>
+                                    <h2 class="mb-2 text-gray-700">Job Title</h2>
+                                    <input type="text" value="" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded">
+                                </div>
+                                <div>
+                                    <h2 class="mb-2 text-gray-700">Job Type</h2>
+                                    <div class="relative">
+                                        <select class="block appearance-none w-full bg-white border text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none" id="grid-state">
+                                            <option>Select job type</option>
+                                            <option>Full Time</option>
+                                            <option>Freelance</option>
+                                            <option>Part Time</option>
+                                            <option>Internship</option>
+                                            <option>Remote</option>
+                                            <option>Temporary</option>
+                                            <option>Project Based</option>
+                                            <option>Periodic</option>
+                                        </select>
+                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                            <svg class="fill-current h-4 w-4"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                                            </svg>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="flex space-x-2 mt-2">
-                                        <button class="bg-blue-700 hover:bg-gray-600 transition duration-300 rounded text-white px-2 py-1 text-sm"><i class="fas fa-users mr-2"></i>Manage Candidates<span class="mx-1 bg-blue-500 px-1 rounded-full text-sm">0</span></button>
+                                <div>
+                                    <h2 class="mb-2 text-gray-700">Job Category</h2>
+                                    <div class="relative">
+                                        <select class="block appearance-none w-full bg-white border text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none" id="grid-state">
+                                            <option>Select Category</option>
+                                            <option>Accounting and Finance</option>
+                                            <option>Data Entry</option>
+                                            <option>Counseling</option>
+                                            <option>Investigative</option>
+                                        </select>
+                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                            <svg class="fill-current h-4 w-4"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="mb-2 text-gray-700">Location</h2>
+                                    <input type="text" value="" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded">
+                                </div>
 
-                                        <i class="far fa-trash-alt self-center bg-gray-100 py-1 px-2 rounded h-7 text-gray-500 text-sm"></i>
-                                        <i class="fas fa-edit self-center bg-gray-100 py-1 pl-2 pr-1 text-gray-500 text-sm rounded h-7"></i>
+                                <div>
+                                    <h2 class="mb-2 text-gray-700">Salary (USD)</h2>
+                                    <div class="grid grid-cols-2 gap-6">
+                                        <input type="text" placeholder="Min" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded">
+                                        <input type="text" placeholder="Max" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h2 class="mb-2 text-gray-700">Tags (optional) <i class="fas fa-info-circle text-blue-500 cursor-help"></i></h2>
+                                    <div class="flex justify-end relative">
+                                        <input type="text" placeholder="e.g Job Title, Responsibilities" class="border w-full rounded px-3 py-2">
+                                        <button class="absolute self-center bg-blue-600 mr-2 px-3 py-1 rounded text-white"><i class="fas fa-plus"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="">
+                            <h2 class="mb-2 text-gray-700">Location</h2>
+                            <textarea rows="5" value="" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded"></textarea>
 
-                        <div class="md:pr-10 flex flex-wrap content-center justify-between bg-white flex-col md:flex-row pb-5 md:pb-0 border-b">
-                            <div class="flex justify-start p-3 md:p-5">
-                                <div class="px-0 md:px-3 flex flex-col">
-                                    <h2 class="text-lg pt-2 pb-1 font-semibold text-gray-700">Frontend React Developer <span class="text-sm bg-yellow-100 text-yellow-500 px-2 rounded py-1">Expiring</span></h2>
-                                    
-                                    <div class="flex space-x-6">
-                                        <div class="flex text-gray-500">
-                                            <i class="far fa-calendar-alt self-center mr-3"></i>
-                                            <span class="self-center">Posted on 10 July, 2019</span>
-                                        </div>
-                                        <div class="flex text-gray-500">
-                                            <i class="far fa-calendar-alt self-center mr-3"></i>
-                                            <span class="self-center">Expiring on 10 August, 2019</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="flex space-x-2 mt-2">
-                                        <button class="bg-blue-700 hover:bg-gray-600 transition duration-300 rounded text-white px-2 py-1 text-sm"><i class="fas fa-users mr-2"></i>Manage Candidates<span class="mx-1 bg-blue-500 px-1 rounded-full text-sm">3</span></button>
-
-                                        <button class="bg-gray-700 hover:bg-gray-600 transition duration-300 rounded text-white px-2 py-1 text-sm"><i class="fas fa-redo mr-2"></i>Refresh</button>
-
-                                        <i class="far fa-trash-alt self-center bg-gray-100 py-1 px-2 rounded h-7 text-gray-500 text-sm"></i>
-                                        <i class="fas fa-edit self-center bg-gray-100 py-1 pl-2 pr-1 text-gray-500 text-sm rounded h-7"></i>
-                                    </div>
-                                </div>
-                            </div>
+                            <h2 class="mt-6 mb-2 text-gray-700">Images or documents that might be helpful in describing your job</h2>
+                            <input type="file" name="" id="">
                         </div>
 
-                        <div class="md:pr-10 flex flex-wrap content-center justify-between bg-white flex-col md:flex-row pb-5 md:pb-0 border-b">
-                            <div class="flex justify-start p-3 md:p-5">
-                                <div class="px-0 md:px-3 flex flex-col">
-                                    <h2 class="text-lg pt-2 pb-1 font-semibold text-gray-700">Frontend React Developer <span class="text-sm bg-red-100 text-red-500 px-2 rounded py-1">Expired</span></h2>
-                                    
-                                    <div class="flex space-x-6">
-                                        <div class="flex text-gray-500">
-                                            <i class="far fa-calendar-alt self-center mr-3"></i>
-                                            <span class="self-center">Posted on 10 July, 2019</span>
-                                        </div>
-                                        <div class="flex text-gray-500">
-                                            <i class="far fa-calendar-alt self-center mr-3"></i>
-                                            <span class="self-center">Expiring on 10 August, 2019</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="flex space-x-2 mt-2">
-                                        <button class="bg-blue-700 hover:bg-gray-600 transition duration-300 rounded text-white px-2 py-1 text-sm"><i class="fas fa-users mr-2"></i>Manage Candidates<span class="mx-1 bg-blue-500 px-1 rounded-full">0</span></button>
-
-                                        <i class="far fa-trash-alt self-center bg-gray-100 py-1 px-2 rounded h-7 text-gray-500 text-sm"></i>
-                                        <i class="fas fa-edit self-center bg-gray-100 py-1 pl-2 pr-1 text-gray-500 text-sm rounded h-7"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <button type="submit" class="w-max mt-6 text-lg bg-blue-700 text-white rounded px-7 py-2"><i class="fas fa-plus mr-3"></i> Post a Job</button>
+                    </form>
                 </div>
             </div>
             
