@@ -152,49 +152,29 @@
                     <div class="flex justify-between border-b py-4 text-gray-700">
                         <div class="flex ml-6">
                             <i class="fab fa-wpforms self-center mr-3 text-blue-500 text-xl"></i>
-                            <h4 class="self-center">Job Submission Form</h4>
+                            <h4 class="self-center">Task Submission Form</h4>
                         </div>
                     </div>
 
                     <form action="" method="" class="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-col gap-4 sm:gap-0 shadow-lg mx-4 md:mx-0 pb-6 px-12 py-6">
                         <div class="flex space-x-6">
-                            <div class="grid grid-cols-3 col-span-5 gap-6 w-full">
+                            <div class="grid grid-cols-3 gap-6 w-full">
                                 <div>
-                                    <h2 class="mb-2 text-gray-700">Job Title</h2>
-                                    <input type="text" value="" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded">
+                                    <h2 class="mb-2 text-gray-700">Project Name</h2>
+                                    <input type="text" placeholder="e.g. build me a website" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded">
                                 </div>
                                 <div>
-                                    <h2 class="mb-2 text-gray-700">Job Type</h2>
-                                    <div class="relative">
-                                        <select class="block appearance-none w-full bg-white border text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none" id="grid-state">
-                                            <option>Select job type</option>
-                                            <option>Full Time</option>
-                                            <option>Freelance</option>
-                                            <option>Part Time</option>
-                                            <option>Internship</option>
-                                            <option>Remote</option>
-                                            <option>Temporary</option>
-                                            <option>Project Based</option>
-                                            <option>Periodic</option>
-                                        </select>
-                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                            <svg class="fill-current h-4 w-4"
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <h2 class="mb-2 text-gray-700">Job Category</h2>
+                                    <h2 class="mb-2 text-gray-700">Website Category</h2>
                                     <div class="relative">
                                         <select class="block appearance-none w-full bg-white border text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none" id="grid-state">
                                             <option>Select Category</option>
-                                            <option>Accounting and Finance</option>
-                                            <option>Data Entry</option>
-                                            <option>Counseling</option>
-                                            <option>Investigative</option>
+                                            <option>Ecommerce</option>
+                                            <option>Portfolio</option>
+                                            <option>Non profit organization</option>
+                                            <option>Wedding</option>
+                                            <option>Multivendor Ecommerce</option>
+                                            <option>Directory & Listing</option>
+                                            <option>Agency</option>
                                         </select>
                                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                                             <svg class="fill-current h-4 w-4"
@@ -204,30 +184,41 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <h2 class="mb-2 text-gray-700">Location</h2>
-                                    <input type="text" value="" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded">
-                                </div>
 
                                 <div>
-                                    <h2 class="mb-2 text-gray-700">Salary (USD)</h2>
+                                    <h2 class="mb-2 text-gray-700">Location <i class="fas fa-info-circle ml-3 cursor-help text-blue-500"></i></h2>
+                                    <input type="text" placeholder="Anywhere" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6 my-6">
+                                <div>
+                                    <h2 class="mb-2 text-gray-700">What is your estimated budget? (USD)</h2>
                                     <div class="grid grid-cols-2 gap-6">
                                         <input type="text" placeholder="Min" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded">
                                         <input type="text" placeholder="Max" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded">
                                     </div>
+                                    <div class="flex mt-2 space-x-4">
+                                        <div>
+                                            <input type="radio" class="self-center mr-2" name="time_period" id="fixed"><label for="fixed">Fixed price project</label>
+                                        </div>
+
+                                        <div>
+                                            <input type="radio" class="self-center mr-2" name="time_period" id="hourly"><label for="hourly">Hourly</label>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div>
-                                    <h2 class="mb-2 text-gray-700">Tags (optional) <i class="fas fa-info-circle text-blue-500 cursor-help"></i></h2>
+                                    <h2 class="mb-2 text-gray-700">What skills are required? <i class="fas fa-info-circle text-blue-500 cursor-help"></i></h2>
                                     <div class="flex justify-end relative">
-                                        <input type="text" placeholder="e.g Job Title, Responsibilities" class="border w-full rounded px-3 py-2">
+                                        <input type="text" placeholder="Add Skills" class="border w-full rounded px-3 py-2">
                                         <button class="absolute self-center bg-blue-600 mr-2 px-3 py-1 rounded text-white"><i class="fas fa-plus"></i></button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         <div class="">
-                            <h2 class="mb-2 text-gray-700">Job Description</h2>
+                            <h2 class="mb-2 text-gray-700">Describe Your Project</h2>
                             <textarea rows="5" value="" class="border border-gray-300 focus:border focus:border-gray-300 w-full block text-gray-600 px-4 py-2 rounded"></textarea>
 
                             <h2 class="mt-6 mb-2 text-gray-700">Images or documents that might be helpful in describing your job</h2>
