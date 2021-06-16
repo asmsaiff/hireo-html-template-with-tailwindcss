@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamurjor</title>
+
+    <base href="dashboard.html"> 
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <style>
+        .breadcrumb  a::after{
+            content: "";
+            display: inline-block;
+            height: 0;
+            width: 0;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid #aaa;
+            font-size: 14px;
+            margin-right: 12px;
+            margin-left: 10px;
+        }
+        .breadcrumb  a:last-child:after{
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="w-72">
+            <div class="hidden sm:block border-r h-screen shadow-l">
+                <div>
+                    <h1 class="text-4xl pl-6 w-full h-20 border-b pt-4 fixed top-0">Mamurjor</h1>
+
+                    <div class="fixed left-0 mt-20 w-72">
+                        <h6 class="pl-6 pt-6 pb-1 text-blue-700 text-sm">Start</h6>
+
+                        <a href="#!" class="flex border-l-4 border-blue-600 pl-6 py-2 text-blue-700 bg-gray-100 bg-opacity-80">
+                            <i class="fas fa-th-large self-center mr-3"></i>
+                            <h4 class="font-thin">Dashboard</h4>
+                        </a>
+
+                        <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                            <i class="far fa-comments self-center mr-3"></i>
+                            <h4 class="font-thin">Message</h4>
+                        </a>
+
+                        <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                            <i class="far fa-star self-center mr-3"></i>
+                            <h4 class="font-thin">Bookmark</h4>
+                        </a>
+
+                        <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                            <i class="far fa-comment-dots self-center mr-3"></i>
+                            <h4 class="font-thin">Review</h4>
+                        </a>
+
+                        <h6 class="pl-6 pt-6 pb-1 text-blue-700 text-sm">Organize & Manage</h6>
+
+                        <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                            <i class="fas fa-briefcase self-center mr-3"></i>
+                            <h4 class="font-thin">Jobs</h4>
+                        </a>
+
+                        <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                            <i class="fas fa-stream self-center mr-3"></i>
+                            <h4 class="font-thin">Tasks</h4>
+                        </a>
+
+                        <h6 class="pl-6 pt-6 pb-1 text-blue-700 text-sm">Account</h6>
+
+                        <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                            <i class="fas fa-cogs self-center mr-3"></i>
+                            <h4 class="font-thin">Settings</h4>
+                        </a>
+
+                        <a href="#!" class="flex border-l-4 hover:border-blue-600 pl-6 py-2 text-gray-600 hover:text-blue-700 hover:bg-gray-100 hover:bg-opacity-80 transition duration-300">
+                            <i class="fas fa-power-off self-center mr-3"></i>
+                            <h4 class="font-thin">Logout</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-11/12">
+            <nav class="self-center border-b h-20 sticky top-0 bg-white">
+                <ul class="flex space-x-4 text-gray-600 ml-6 pt-7">
+                    <li><a href="/">Home</a></li>
+
+                    <li class="dropdown inline-block relative">
+                        <button class="inline-flex items-center">
+                            <span class="mr-1">Find Work</span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                        </button>
+                        
+                        <ul class="dropdown-menu absolute hidden bg-gray-800 text-gray-50 pt-5 w-64 rounded py-3">
+                            <li class=""><a class="text-gray-400 hover:text-gray-50 transition duration-300 -mt-5 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                            <li class=""><a class="text-gray-400 hover:text-gray-50 transition duration-300 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+                            <li class=""><a class="text-gray-400 hover:text-gray-50 transition duration-300 py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="employer-profile.html">For Employers</a></li>
+                    <li><a href="course.html">Training</a></li>
+                    <li><a href="single.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="course.html">Blog</a></li>
+                </ul>
+            </nav>
+
+            
+            <div class="bg-gray-100 pb-12">
+                <!-- Page Header -->
+                <div class="py-3 md:py-4 px-4 md:px-6">
+                    <div class="mx-auto">
+                        <div class="md:pr-10 xl:pr-6 flex flex-wrap content-center justify-between flex-col md:flex-row pb-4 md:pb-0">
+                            <div class="flex justify-start md:p-3 md:pt-5 md:pb-1 md:pr-5">
+                                <div class="px-0 md:px-3 flex flex-col">
+                                    <h2 class="text-3xl pt-1 pb-1 text-gray-700">Howdy, Mamu!</h2>
+
+                                    <h3 class="pb-2 text-gray-700">
+                                        We are glad to see you again!
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="breadcrumb flex w-max md:self-center bg-gray-800 text-gray-200 px-3 py-2 rounded text-sm">
+                                <a href="#">Home</a>
+                                <a href="#">Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-12 mt-8 bg-white">
+                    <div class="flex justify-between border-b py-4 text-gray-700">
+                        <div class="flex ml-6">
+                            <i class="fas fa-briefcase self-center mr-3 text-blue-500 text-xl"></i>
+                            <h4 class="self-center">My Job Listings</h4>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-col gap-4 sm:gap-0 shadow-lg mx-4 md:mx-0">
+                        <div class="md:pr-10 flex flex-wrap content-center justify-between bg-white flex-col md:flex-row pb-5 md:pb-0 border-b">
+                            <div class="flex justify-start p-3 md:p-5">
+                                <div class="relative">
+                                    <img class="hidden md:block p-3 w-28 rounded-full" src="https://www.vasterad.com/themes/hireo/images/user-avatar-big-03.jpg" alt="">
+
+                                    <span class="w-5 h-5 absolute bg-green-500 text-xs text-center text-white rounded-full ml-20 -mt-9 shadow-2xl"><i class="fas fa-check mt-1"></i></span>
+                                </div>
+                                <div class="px-0 md:px-3 flex flex-col">
+                                    <h2 class="text-lg pt-2 pb-1 font-semibold text-gray-700">Frontend React Developer</h2>
+                                    
+                                    <div class="flex space-x-3">
+                                        <div class="flex text-gray-500">
+                                            <i class="far fa-envelope self-center mr-2"></i>
+                                            <span class="self-center">admin@mamurjor.com</span>
+                                        </div>
+                                        <div class="flex text-gray-500">
+                                            <i class="far fas fa-phone-alt self-center mr-3"></i>
+                                            <span class="self-center"> (+61) 123-456-789</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex space-x-2 mt-2">
+                                        
+                                        <button class="bg-blue-700 hover:bg-gray-600 transition duration-300 rounded text-white px-2 py-1 text-sm"><i class="fas fa-check mr-2"></i>Accept Offer</button>
+
+                                        <button class="bg-gray-700 hover:bg-gray-600 transition duration-300 rounded text-white px-2 py-1 text-sm"><i class="fas fa-envelope mr-2"></i>Send Message</button>
+
+                                        <i class="far fa-trash-alt self-center bg-gray-100 py-1 px-2 rounded h-7 text-gray-500 text-sm"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-6 my-8 bg-gray-100 flex space-x-2 text-center divide-x py-4 divide-gray-200 rounded">
+                                <div class="px-2">
+                                    <h1 class="text-gray-800">3</h1>
+                                    <h4 class="text-gray-500">Bids</h4>
+                                </div>
+                                <div class="px-2">
+                                    <h1 class="text-gray-800">$22</h1>
+                                    <h4 class="text-gray-500">Avg. Bid</h4>
+                                </div>
+                                <div class="px-2">
+                                    <h1 class="text-gray-800">$15 - $30</h1>
+                                    <h4 class="text-gray-500">Hourly Rate</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="md:pr-10 flex flex-wrap content-center justify-between bg-white flex-col md:flex-row pb-5 md:pb-0 border-b">
+                            <div class="flex justify-start p-3 md:p-5">
+                                <div class="relative">
+                                    <img class="hidden md:block p-3 w-28 rounded-full" src="https://www.vasterad.com/themes/hireo/images/user-avatar-big-03.jpg" alt="">
+
+                                    <span class="w-5 h-5 absolute bg-green-500 text-xs text-center text-white rounded-full ml-20 -mt-9 shadow-2xl"><i class="fas fa-check mt-1"></i></span>
+                                </div>
+                                <div class="px-0 md:px-3 flex flex-col">
+                                    <h2 class="text-lg pt-2 pb-1 font-semibold text-gray-700">Frontend React Developer</h2>
+                                    
+                                    <div class="flex space-x-3">
+                                        <div class="flex text-gray-500">
+                                            <i class="far fa-envelope self-center mr-2"></i>
+                                            <span class="self-center">admin@mamurjor.com</span>
+                                        </div>
+                                        <div class="flex text-gray-500">
+                                            <i class="far fas fa-phone-alt self-center mr-3"></i>
+                                            <span class="self-center"> (+61) 123-456-789</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex space-x-2 mt-2">
+                                        
+                                        <button class="bg-blue-700 hover:bg-gray-600 transition duration-300 rounded text-white px-2 py-1 text-sm"><i class="fas fa-check mr-2"></i>Accept Offer</button>
+
+                                        <button class="bg-gray-700 hover:bg-gray-600 transition duration-300 rounded text-white px-2 py-1 text-sm"><i class="fas fa-envelope mr-2"></i>Send Message</button>
+
+                                        <i class="far fa-trash-alt self-center bg-gray-100 py-1 px-2 rounded h-7 text-gray-500 text-sm"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-6 my-8 bg-gray-100 flex space-x-2 text-center divide-x py-4 divide-gray-200 rounded">
+                                <div class="px-2">
+                                    <h1 class="text-gray-800">3</h1>
+                                    <h4 class="text-gray-500">Bids</h4>
+                                </div>
+                                <div class="px-2">
+                                    <h1 class="text-gray-800">$22</h1>
+                                    <h4 class="text-gray-500">Avg. Bid</h4>
+                                </div>
+                                <div class="px-2">
+                                    <h1 class="text-gray-800">$15 - $30</h1>
+                                    <h4 class="text-gray-500">Hourly Rate</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="md:pr-10 flex flex-wrap content-center justify-between bg-white flex-col md:flex-row pb-5 md:pb-0 border-b">
+                            <div class="flex justify-start p-3 md:p-5">
+                                <div class="relative">
+                                    <img class="hidden md:block p-3 w-28 rounded-full" src="https://www.vasterad.com/themes/hireo/images/user-avatar-big-03.jpg" alt="">
+
+                                    <span class="w-5 h-5 absolute bg-green-500 text-xs text-center text-white rounded-full ml-20 -mt-9 shadow-2xl"><i class="fas fa-check mt-1"></i></span>
+                                </div>
+                                <div class="px-0 md:px-3 flex flex-col">
+                                    <h2 class="text-lg pt-2 pb-1 font-semibold text-gray-700">Frontend React Developer</h2>
+                                    
+                                    <div class="flex space-x-3">
+                                        <div class="flex text-gray-500">
+                                            <i class="far fa-envelope self-center mr-2"></i>
+                                            <span class="self-center">admin@mamurjor.com</span>
+                                        </div>
+                                        <div class="flex text-gray-500">
+                                            <i class="far fas fa-phone-alt self-center mr-3"></i>
+                                            <span class="self-center"> (+61) 123-456-789</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex space-x-2 mt-2">
+                                        
+                                        <button class="bg-blue-700 hover:bg-gray-600 transition duration-300 rounded text-white px-2 py-1 text-sm"><i class="fas fa-check mr-2"></i>Accept Offer</button>
+
+                                        <button class="bg-gray-700 hover:bg-gray-600 transition duration-300 rounded text-white px-2 py-1 text-sm"><i class="fas fa-envelope mr-2"></i>Send Message</button>
+
+                                        <i class="far fa-trash-alt self-center bg-gray-100 py-1 px-2 rounded h-7 text-gray-500 text-sm"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-6 my-8 bg-gray-100 flex space-x-2 text-center divide-x py-4 divide-gray-200 rounded">
+                                <div class="px-2">
+                                    <h1 class="text-gray-800">3</h1>
+                                    <h4 class="text-gray-500">Bids</h4>
+                                </div>
+                                <div class="px-2">
+                                    <h1 class="text-gray-800">$22</h1>
+                                    <h4 class="text-gray-500">Avg. Bid</h4>
+                                </div>
+                                <div class="px-2">
+                                    <h1 class="text-gray-800">$15 - $30</h1>
+                                    <h4 class="text-gray-500">Hourly Rate</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="py-6 px-6 border-t">
+                <div class="flex justify-between">
+                    <p class="text-sm text-gray-500">© 2019 Mamurjor. All Rights Reserved. </p>
+                    <div class="flex space-x-5 text-xl text-gray-600 transition duration-200">
+                        <a href=""><i class="fab fa-facebook-f hover:text-gray-800 transition duration-200 cursor-pointer"></i></a>
+                        <a href=""><i class="fab fa-twitter hover:text-gray-800 transition duration-200 cursor-pointer"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g hover:text-gray-800 transition duration-200 cursor-pointer"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in hover:text-gray-800 transition duration-200 cursor-pointer"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
